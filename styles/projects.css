@@ -1,0 +1,291 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* This begins nav header for screens wider than tablets*/
+
+#nav-header{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    height: 4em;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#nav-header h1{
+    margin: auto 0;
+}
+
+#nav-header > h1 > a{
+    font-size: .9em;
+    margin: 0 0 0 1em;
+    color: black;
+}
+
+#close-burger-menu{
+    display: none;
+}
+
+
+#nav-links{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 1em auto 0;
+}
+
+#nav-links a{
+    margin: auto 1.5em;
+    padding: 0;
+    font-size: 1em;
+    color: black;
+}
+
+#nav-links a:hover{
+    border-bottom: .1em solid black;
+}
+
+#current-page{
+    font-weight: bolder;
+    font-size: 1.2em !important;
+}
+
+#menu-burger{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 3em;
+    background-color: black;
+}
+
+/*Template ends here. Footer is included as part of the template*/
+
+/* Page unique style begins here*/
+main{
+    margin: 0;
+    padding: 0;
+}
+
+#projects-sections{
+    width: 94%;
+    position: absolute;
+    top: 25%;
+    left: 03%;
+}
+
+
+#projects-sections *{
+    text-align: center;
+}
+
+#projects-sections > p{
+    font-size: 1.22em;
+    width: 70%;
+    margin: 4.5em auto;
+}
+
+.hide-p{
+    display: none !important;
+}
+
+#go-back-projects{
+    display: none;
+    position: absolute;
+    top: -5em;
+    left: 4em;
+}
+
+.show-project-arrow{
+    display: block !important;
+}
+
+#go-back-projects *{
+    font-size: 2.5em;
+}
+
+#frontend-projects{
+    display: none;
+    grid-template: 1fr  1fr / 1fr 1fr;
+    grid-gap: .5em;
+    margin-bottom: 5em;
+}
+
+#backend-projects{
+    display: none;
+    grid-template: 1fr  1fr / 1fr 1fr;
+    grid-gap: .5em;
+    margin-bottom: 5em;
+}
+
+.display-project-section{
+    display: grid !important;
+}
+
+.display-full-project{
+    position: absolute !important;
+    margin: -2em auto 4em auto;
+    top: 5% !important;
+    left: 10.5%;
+    width: 80%;
+    transition: all ease-in-out 2s;
+    background-color: 	#fffff2;
+}
+
+.project{
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.project img{
+    width: 100%;
+    margin: 0;
+}
+
+.project-info{
+    display: none;
+    height: auto;
+}
+
+.project-info > h3{
+    margin-top: 0;    
+    background-color: 	#fffff2;
+}
+
+
+.project-info > div{
+    display: flex;
+    margin-bottom: 2em;
+    justify-content: space-evenly;
+}
+
+.hide{
+    width: 0 !important;
+    border: none !important;
+    display: none !important;
+}
+
+.show-project-info{
+    display: block !important;
+}
+
+@keyframes displayproject {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 9em;
+    }
+}
+
+
+/*This begins mobile view */
+@media screen and (max-width: 770px){
+    body{
+        font-size: 16px;
+    }
+
+    /*This begins the mobile nav header for tablets and mobile phones*/
+    #menu-burger{
+        display: block;
+        position: relative;
+        top: 1em;
+        right: 1em;
+        z-index: 3;
+    }
+
+    .hide-menu-burger{
+        display: none !important;
+    }
+
+    #close-burger-menu{
+        display: none;
+        position: relative;
+        top: .5em;
+        right: .5em;
+        z-index: 3;
+        font-size: 2em;
+        padding: 0;
+    }
+
+    .show-close-menu{
+        display: block !important;
+    }
+
+    #menu-burger div{
+        background-color: black;
+        margin: .2em 0;
+        width: 1.5em;
+        height: .2em;
+    }
+    header{
+        justify-content: space-between;
+        height: 3.5em;
+    }
+
+    header > h1{
+        margin: auto 0;
+    }
+
+    header > h1 > a{
+        margin-left: 1em;
+    }
+
+    #nav-links{
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: .04em;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .display-links{
+        display: flex !important;
+    }
+
+    #nav-links a{
+        margin: auto;
+        font-size: 1.12em;
+        color: black;
+    }
+
+    #frontend-projects{
+        grid-template: 1fr 1fr 1fr 1fr/ 1fr;
+    }
+
+    #backend-projects{
+        grid-template: 1fr 1fr 1fr 1fr/ 1fr;
+    }
+}

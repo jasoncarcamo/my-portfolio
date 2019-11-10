@@ -1,0 +1,322 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* This begins nav header for screens wider than tablets*/
+
+#nav-header{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    height: 4em;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#nav-header h1{
+    margin: auto 0;
+}
+
+#nav-header > h1 > a{
+    font-size: .9em;
+    margin: 0 0 0 1em;
+    color: black;
+}
+
+#close-burger-menu{
+    display: none;
+}
+
+
+#nav-links{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 1em auto 0;
+}
+
+#nav-links a{
+    margin: auto 1.5em;
+    padding: 0;
+    font-size: 1em;
+    color: black;
+}
+
+#nav-links a:hover{
+    border-bottom: .1em solid black;
+}
+
+#current-page{
+    font-weight: bolder;
+    font-size: 1.2em !important;
+}
+
+#menu-burger{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 3em;
+    background-color: black;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+/*Template ends here. Footer is included as part of the template*/
+
+
+
+/* Page unique style begins here*/
+#skills-section{
+    display: block;
+    flex-direction: column;
+    width: 94%;
+    position: absolute;
+    top: 28%;
+    left: 03%;
+}
+
+.hide-skill-section{
+    display: none !important;
+}
+
+#skills-section *{
+    text-align: center;
+}
+
+#skills-section p{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.22em;
+    cursor: pointer;
+}
+
+#skills-section p:hover{
+    border-bottom: .05em solid black;
+}
+
+#skills-section p:nth-child(2){
+    margin: 4em auto !important;
+}
+
+#frontend-skills{
+    display: none;
+    padding: 2em 0;
+    flex-direction: column;
+    width: 78%;
+    position: absolute;
+    top: 23%;
+    left: 11%;
+}
+
+#frontend-skills *{
+    text-align: center;
+}
+
+#frontend-skills p{
+    margin: .9em auto;
+    width: 70%;
+    font-size: 1.22em;
+    padding: 0 .5em;
+    cursor: pointer;
+}
+
+#frontend-skills p:hover{
+    border-bottom: .05em solid black;
+    margin-bottom: .85em !important;
+}
+
+#frontend-skills p:nth-child(1){
+    margin-top: 0 !important;
+}
+
+.close-skills{
+    position: absolute;
+    font-size: 2em;
+    top: -1em;
+    left: 0;
+    padding: 0;
+    width: .5em;
+    height: .5em;
+}
+
+.show-skill{
+    display: block !important;
+}
+
+.close-skills *{
+    padding: 0;
+    margin: 0;
+}
+
+#backend-skills{
+    display: none;
+    padding: 2em 0;
+    flex-direction: column;
+    width: 78%;
+    position: absolute;
+    top: 23%;
+    left: 11%;
+}
+
+#backend-skills *{
+    text-align: center;
+}
+
+#backend-skills p{
+    width: 70%;
+    margin: 1em auto;
+    font-size: 1.22em;
+    cursor: pointer;
+}
+
+#backend-skills p:hover{
+    border-bottom: .05em solid black;
+    margin-bottom: .75em !important;
+}
+
+#backend-skills p:nth-child(1){
+    margin-top: 0 !important;
+}
+
+#development-tools{
+    display: none;
+    padding: 2em 0;
+    flex-direction: column;
+    width: 78%;
+    position: absolute;
+    top: 23%;
+    left: 11%;
+}
+
+#development-tools *{
+    text-align: center;
+}
+
+#development-tools p{
+    width: 70%;
+    margin: 1em auto;
+    font-size: 1.22em;
+    cursor: pointer;
+}
+
+#development-tools p:hover{
+    border-bottom: .05em solid black;
+    margin-bottom: .85em !important;
+}
+
+#development-tools p:nth-child(1){
+    margin-top: 0 !important;
+}
+
+#development-tools p:last-child{
+    margin-bottom: 4em !important;
+}
+
+
+
+/*This begins mobile view */
+@media screen and (max-width: 770px){
+    body{
+        font-size: 16px;
+    }
+
+    /*This begins the mobile nav header for tablets and mobile phones*/
+    #menu-burger{
+        display: block;
+        position: relative;
+        top: 1em;
+        right: 1em;
+        z-index: 3;
+    }
+
+    .hide-menu-burger{
+        display: none !important;
+    }
+
+    #close-burger-menu{
+        display: none;
+        position: relative;
+        top: .5em;
+        right: .5em;
+        z-index: 3;
+        font-size: 2em;
+        padding: 0;
+    }
+
+    .show-close-menu{
+        display: block !important;
+    }
+
+    #menu-burger div{
+        background-color: black;
+        margin: .2em 0;
+        width: 1.5em;
+        height: .2em;
+    }
+    header{
+        justify-content: space-between;
+        height: 3.5em;
+    }
+
+    header > h1{
+        margin: auto 0;
+    }
+
+    header > h1 > a{
+        margin-left: 1em;
+    }
+
+    #nav-links{
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: .04em;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .display-links{
+        display: flex !important;
+    }
+
+    #nav-links a{
+        margin: auto;
+        font-size: 1.12em;
+        color: black;
+    }
+
+
+}
