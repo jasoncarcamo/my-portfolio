@@ -172,11 +172,18 @@ main{
 .display-full-project{
     position: absolute !important;
     top: 5% !important;
-    left: 10.5 ;
+    left: .03%;
+    text-shadow: none !important;
     width: auto;
     animation-name: displayproject;
     animation-duration: 1.5s;
     background-color: 	#fffff2;
+}
+
+@media screen and (min-width: 1900px){
+    .display-full-project{
+        left: 3.02% !important;
+    }
 }
 
 .project{
