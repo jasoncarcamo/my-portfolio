@@ -183,7 +183,7 @@ main{
     margin: 1em 0;
     padding: 0;
     border: .06em solid black;
-    box-shadow: .3em .3em .3em black;;
+    box-shadow: .3em .2em .1em gray;
     background-color: white;
     transform: translateX(0);
 }
@@ -307,12 +307,27 @@ main{
         position: absolute;
         z-index: 2;
         top: .04em;
-        left: -.05em;
+        left: 0;
         height: 100vh;
         width: 100%;
         margin: 0;
         padding: 0;
         flex-direction: column;
+    }
+
+    .display-links{
+        display: flex !important;
+        animation-name: navlinks !important;
+        animation-duration: 1.2s !important;
+    }
+
+    @keyframes navlinks{
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0);
+        }
     }
 
     .display-links{

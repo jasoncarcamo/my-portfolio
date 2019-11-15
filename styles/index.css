@@ -209,6 +209,17 @@ main{
 
     .display-links{
         display: flex !important;
+        animation-name: navlinks !important;
+        animation-duration: 1.2s !important;
+    }
+
+    @keyframes navlinks{
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0);
+        }
     }
 
     #nav-links a{

@@ -337,7 +337,21 @@ main{
         margin: 0;
         padding: 0;
         flex-direction: column;
-        background-color: white;
+    }
+
+    .display-links{
+        display: flex !important;
+        animation-name: navlinks !important;
+        animation-duration: 1.2s !important;
+    }
+
+    @keyframes navlinks{
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0);
+        }
     }
 
     .display-links{

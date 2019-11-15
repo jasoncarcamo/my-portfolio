@@ -111,8 +111,8 @@ main{
 
 #about-section{
     width: 94%;    
-    height: 15em;
-    padding: 3em 0 4.5em 0;
+    height: 12em;
+    padding: 3em 0 2.5em 0;
     border-radius: 1em;
     position: absolute;
     top: 23%;
@@ -215,6 +215,21 @@ main{
 
     .display-links{
         display: flex !important;
+        animation-name: navlinks !important;
+        animation-duration: 1.2s !important;
+    }
+
+    @keyframes navlinks{
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    .display-links{
+        display: flex !important;
     }
 
     #nav-links a{
@@ -227,6 +242,7 @@ main{
     #about-section{
         top: 23%;
         height: 24em;
+        padding: 3em 0 4.5em 0;
     }
 
 }
