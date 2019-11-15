@@ -74,9 +74,16 @@ function displayProjectInfo(){
     });
 }
 
+function navLinksScroll(){
+    navLinks.addEventListener("touchmove", (e)=>{
+        e.preventDefault();
+    });
+}
+
 
 handleScreenSize();
 handleMenuBurger();
 closeBurgermenu();
 displayProjectSection();
 displayProjectInfo();
+navLinksScroll();

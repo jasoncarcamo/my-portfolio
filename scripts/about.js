@@ -25,7 +25,14 @@ function closeBurgermenu(){
     });
 }
 
+function navLinksScroll(){
+    navLinks.addEventListener("touchmove", (e)=>{
+        e.preventDefault();
+    });
+}
+
 
 handleScreenSize();
 handleMenuBurger();
 closeBurgermenu();
+navLinksScroll();

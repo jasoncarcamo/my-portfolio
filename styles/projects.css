@@ -314,7 +314,7 @@ main{
         position: absolute;
         z-index: 2;
         top: .04em;
-        left: 0;
+        left: -.05em;
         height: 100vh;
         width: 100%;
         margin: 0;

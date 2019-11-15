@@ -68,9 +68,15 @@ function handleCloseSkill(){
     })
 }
 
+function navLinksScroll(){
+    navLinks.addEventListener("touchmove", (e)=>{
+        e.preventDefault();
+    });
+}
 
 handleScreenSize();
 handleMenuBurger();
 closeBurgermenu();
 handleSkillsLinks();
 handleCloseSkill();
+navLinksScroll();
