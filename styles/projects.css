@@ -31,7 +31,7 @@ a{
     padding: 0;
     justify-content: space-between;
     height: 4em;
-    background-color: white;
+    background-color: #b60002;
     border: 1px solid black;
 }
 
@@ -42,7 +42,7 @@ a{
 #nav-header > h1 > a{
     font-size: .9em;
     margin: 0 0 0 1em;
-    color: black;
+    color: white;
 }
 
 #close-burger-menu{
@@ -54,13 +54,14 @@ a{
     display: flex;
     justify-content: space-between;
     margin: auto 1em auto 0;
+    background-color: #b60002;
 }
 
 #nav-links a{
     margin: auto 1.5em;
     padding: 0;
     font-size: 1em;
-    color: black;
+    color: white !important;
 }
 
 #nav-links a:hover{
@@ -81,8 +82,24 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 3em;
-    background-color: black;
+    height: 4.12em;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.contact-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 1em auto 1em auto;
+    padding: 0;
+    font-size: 1em;
+}
+
+.contact-icons a *{
+    font-size: 2em;
 }
 
 /*Template ends here. Footer is included as part of the template*/
@@ -103,12 +120,14 @@ main{
 
 #projects-sections *{
     text-align: center;
+    color: #b60002;
 }
 
 #projects-sections > p{
     font-size: 1.22em;
     width: 70%;
     margin: 4.5em auto;
+    cursor: pointer;
 }
 
 .hide-p{
@@ -118,7 +137,7 @@ main{
 #go-back-projects{
     display: none;
     position: absolute;
-    top: -5em;
+    top: -.05em;
     left: 4em;
 }
 
@@ -132,15 +151,17 @@ main{
 
 #frontend-projects{
     display: none;
-    grid-template: 1fr  1fr / 1fr 1fr;
-    grid-gap: .5em;
+    grid-template: 1fr  1fr  / 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 5em;
     margin-bottom: 5em;
 }
 
 #backend-projects{
     display: none;
-    grid-template: 1fr  1fr / 1fr 1fr;
-    grid-gap: .5em;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 5em;
     margin-bottom: 5em;
 }
 
@@ -150,38 +171,49 @@ main{
 
 .display-full-project{
     position: absolute !important;
-    margin: -2em auto 4em auto;
+    margin: 0 auto -10em auto;
     top: 5% !important;
-    left: 10.5%;
-    width: 80%;
-    transition: all ease-in-out 2s;
+    left: 10.5 !important;
+    width: 100%;
+    animation-name: displayproject;
+    animation-duration: 1s;
     background-color: 	#fffff2;
 }
 
 .project{
-    overflow: hidden;
-    border: 1px solid black;
+    margin: 2em 0;
+    padding: 0;
+    border: .06em solid black;
+    box-shadow: .3em .3em .3em black;;
+    background-color: white;
 }
 
 .project img{
     width: 100%;
+    min-height: 100% !important;
     margin: 0;
+    padding: 0;
 }
 
 .project-info{
     display: none;
     height: auto;
+    margin: 0;
+    background-color: #b60002;
+}
+
+.project-info *{
+    color: white !important;
 }
 
 .project-info > h3{
-    margin-top: 0;    
-    background-color: 	#fffff2;
+    margin: 0;    
 }
 
 
 .project-info > div{
     display: flex;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
     justify-content: space-evenly;
 }
 
@@ -193,14 +225,26 @@ main{
 
 .show-project-info{
     display: block !important;
+    height: 10em;
+}
+
+.contact-icons a:nth-child(1){
+    color: black !important;
+}
+
+.contact-icons a:nth-child(2){
+    color: #2867B2 !important;
+}
+.contact-icons a:nth-child(3){
+    color: rgb(26, 175, 138) !important;
 }
 
 @keyframes displayproject {
     0%{
-        height: 0;
+        transform: translateX(100%);
     }
     100%{
-        height: 9em;
+        transform: translateX(0);
     }
 }
 
@@ -239,11 +283,12 @@ main{
     }
 
     #menu-burger div{
-        background-color: black;
+        background-color: white;
         margin: .2em 0;
         width: 1.5em;
         height: .2em;
     }
+
     header{
         justify-content: space-between;
         height: 3.5em;
@@ -262,13 +307,16 @@ main{
         position: absolute;
         z-index: 2;
         top: .04em;
-        left: 0;
+        left: -.05em;
         height: 100vh;
         width: 100%;
         margin: 0;
         padding: 0;
         flex-direction: column;
-        background-color: white;
+    }
+
+    .display-full-project{
+        left: 0 !important;
     }
 
     .display-links{
@@ -281,11 +329,18 @@ main{
         color: black;
     }
 
+    #go-back-projects{
+        top: 1em;
+    }
+
     #frontend-projects{
+        margin-bottom: 0 !important;
         grid-template: 1fr 1fr 1fr 1fr/ 1fr;
+        grid-gap: 2em;
     }
 
     #backend-projects{
+        margin-bottom: 0 !important;
         grid-template: 1fr 1fr 1fr 1fr/ 1fr;
     }
 }

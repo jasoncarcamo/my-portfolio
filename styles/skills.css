@@ -25,13 +25,13 @@ a{
     position: fixed;
     z-index: 2;
     top: 0;
-    left: 0;
+    left: -.05em;
     width: 100%;
     margin: 0;
     padding: 0;
     justify-content: space-between;
     height: 4em;
-    background-color: white;
+    background-color: #b60002;
     border: 1px solid black;
 }
 
@@ -42,7 +42,7 @@ a{
 #nav-header > h1 > a{
     font-size: .9em;
     margin: 0 0 0 1em;
-    color: black;
+    color: white;
 }
 
 #close-burger-menu{
@@ -54,13 +54,14 @@ a{
     display: flex;
     justify-content: space-between;
     margin: auto 1em auto 0;
+    background-color: #b60002 !important;
 }
 
 #nav-links a{
     margin: auto 1.5em;
     padding: 0;
     font-size: 1em;
-    color: black;
+    color: white !important;
 }
 
 #nav-links a:hover{
@@ -81,8 +82,24 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 3em;
-    background-color: black;
+    height: 4.12em;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.contact-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 1em auto 1em auto;
+    padding: 0;
+    font-size: 1em;
+}
+
+.contact-icons a *{
+    font-size: 2em;
 }
 
 main{
@@ -116,6 +133,7 @@ main{
     margin: 0 auto;
     font-size: 1.22em;
     cursor: pointer;
+    color: #b60002;
 }
 
 #skills-section p:hover{
@@ -146,6 +164,7 @@ main{
     font-size: 1.22em;
     padding: 0 .5em;
     cursor: pointer;
+    color: #b60002;
 }
 
 #frontend-skills p:hover{
@@ -160,7 +179,7 @@ main{
 .close-skills{
     position: absolute;
     font-size: 2em;
-    top: -1em;
+    top: -.05em;
     left: 0;
     padding: 0;
     width: .5em;
@@ -174,6 +193,7 @@ main{
 .close-skills *{
     padding: 0;
     margin: 0;
+    color: #b60002;
 }
 
 #backend-skills{
@@ -195,6 +215,7 @@ main{
     margin: 1em auto;
     font-size: 1.22em;
     cursor: pointer;
+    color: #b60002;
 }
 
 #backend-skills p:hover{
@@ -225,6 +246,7 @@ main{
     margin: 1em auto;
     font-size: 1.22em;
     cursor: pointer;
+    color: #b60002;
 }
 
 #development-tools p:hover{
@@ -240,6 +262,16 @@ main{
     margin-bottom: 4em !important;
 }
 
+.contact-icons a:nth-child(1){
+    color: black !important;
+}
+
+.contact-icons a:nth-child(2){
+    color: #2867B2 !important;
+}
+.contact-icons a:nth-child(3){
+    color: rgb(26, 175, 138) !important;
+}
 
 
 /*This begins mobile view */
@@ -276,7 +308,7 @@ main{
     }
 
     #menu-burger div{
-        background-color: black;
+        background-color: white;
         margin: .2em 0;
         width: 1.5em;
         height: .2em;
