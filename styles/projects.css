@@ -334,13 +334,11 @@ main{
     }
 
     #frontend-projects{
-        margin-bottom: 0 !important;
         grid-template: 1fr 1fr 1fr 1fr/ 1fr;
         grid-gap: 2em;
     }
 
     #backend-projects{
-        margin-bottom: 0 !important;
         grid-template: 1fr 1fr/ 1fr;
     }
 }
