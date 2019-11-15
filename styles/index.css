@@ -217,5 +217,8 @@ main{
         color: black;
     }
 
+    #home-section{
+        height: 22em;
+    }
 
 }

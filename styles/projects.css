@@ -341,6 +341,6 @@ main{
 
     #backend-projects{
         margin-bottom: 0 !important;
-        grid-template: 1fr 1fr 1fr 1fr/ 1fr;
+        grid-template: 1fr 1fr/ 1fr;
     }
 }
