@@ -186,6 +186,7 @@ main{
     border: .06em solid black;
     box-shadow: .3em .3em .3em black;;
     background-color: white;
+    transform: translateX(0);
 }
 
 .project img{
