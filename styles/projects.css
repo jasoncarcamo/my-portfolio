@@ -118,7 +118,7 @@ main{
 }
 
 
-#projects-sections *{
+#projects-sections p, #projects-sections h3{
     text-align: center;
     color: #b60002;
 }
@@ -140,6 +140,10 @@ main{
     position: absolute;
     top: -.05em;
     left: 4em;
+}
+
+#go-back-pojects{
+    color: black !important;
 }
 
 .show-project-arrow{
