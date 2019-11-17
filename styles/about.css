@@ -118,7 +118,6 @@ main{
     top: 23%;
     left: 03%;
     margin-bottom: 5.5em;
-    background-color: #b60002;
 }
 
 #about-section *{
@@ -129,7 +128,6 @@ main{
     display: block;
     width: 70%;
     margin: 0 auto;
-    color: white;
 }
 
 #about-section p:nth-child(2){

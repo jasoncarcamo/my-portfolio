@@ -127,12 +127,10 @@ main{
     position: absolute;
     top: 23%;
     left: 03%;
-    background-color: #b60002;
 }
 
 #home-section *{
     text-align: center;
-    color: white;
 }
 
 #home-section p{
