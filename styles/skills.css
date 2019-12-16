@@ -135,10 +135,6 @@ main{
     cursor: pointer;
 }
 
-#skills-section p:hover{
-    border-bottom: .05em solid black;
-}
-
 #skills-section p:nth-child(2){
     margin: 4em auto !important;
 }
@@ -166,11 +162,6 @@ main{
     color: #b60002;
 }
 
-#frontend-skills p:hover{
-    border-bottom: .05em solid black;
-    margin-bottom: .85em !important;
-}
-
 #frontend-skills p:nth-child(1){
     margin-top: 0 !important;
 }
@@ -183,6 +174,7 @@ main{
     padding: 0;
     width: .5em;
     height: .5em;
+    cursor: pointer;
 }
 
 .show-skill{
@@ -216,10 +208,6 @@ main{
     color: #b60002;
 }
 
-#backend-skills p:hover{
-    border-bottom: .05em solid black;
-    margin-bottom: .75em !important;
-}
 
 #backend-skills p:nth-child(1){
     margin-top: 0 !important;
@@ -247,10 +235,6 @@ main{
     color: #b60002;
 }
 
-#development-tools p:hover{
-    border-bottom: .05em solid black;
-    margin-bottom: .85em !important;
-}
 
 #development-tools p:nth-child(1){
     margin-top: 0 !important;

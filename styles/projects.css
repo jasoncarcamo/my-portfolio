@@ -140,6 +140,7 @@ main{
     position: absolute;
     top: -.05em;
     left: 4em;
+    cursor: pointer;
 }
 
 #go-back-pojects{
@@ -205,6 +206,7 @@ main{
     min-height: 100% !important;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .project-info{
