@@ -36,11 +36,13 @@ a{
 
 #nav-header h1{
     margin: auto 0;
+    padding: 0;
 }
 
 #nav-header > h1 > a{
     font-size: .9em;
     margin: 0 0 0 1em;
+    padding: 0;
     color: white;
 }
 
@@ -51,8 +53,9 @@ a{
 
 #nav-links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto 1em auto 0;
+    padding: 0;
     background-color: #b60002;
 }
 
