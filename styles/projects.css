@@ -205,7 +205,7 @@ main{
     padding: 0;
     border: .06em solid black;
     box-shadow: .3em .2em .1em gray;
-    background-color: white;
+    background-color: #b60002;
     transform: translateX(0);
 }
 
@@ -235,7 +235,7 @@ main{
 
 .project-info > div{
     display: flex;
-    margin-bottom: 5em;
+    margin-bottom: 1em;
     justify-content: space-evenly;
 }
 
@@ -247,7 +247,8 @@ main{
 
 .show-project-info{
     display: block !important;
-    height: 10em;
+    height: auto;
+    background-color: #b60002 !important;
 }
 
 .contact-icons a:nth-child(1){
