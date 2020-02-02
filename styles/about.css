@@ -75,7 +75,7 @@ a{
     font-size: 1.2em !important;
 }
 
-#menu-burger{
+#nav-burger{
     display: none;
 }
 
@@ -155,12 +155,12 @@ main{
     }
 
     /*This begins the mobile nav header for tablets and mobile phones*/
-    #menu-burger{
+    #nav-burger{
         display: block;
         position: relative;
-        top: 1em;
+        top: .5em;
         right: 1em;
-        z-index: 3;
+        z-index: 4;
     }
 
     .hide-menu-burger{
@@ -181,7 +181,7 @@ main{
         display: block !important;
     }
 
-    #menu-burger div{
+    #nav-burger div{
         background-color: white;
         margin: .2em 0;
         width: 1.5em;

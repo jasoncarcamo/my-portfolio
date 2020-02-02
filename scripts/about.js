@@ -1,5 +1,5 @@
 let screenWidth = window.innerWidth;
-const menuBurger = document.getElementById("menu-burger");
+const menuBurger = document.getElementById("nav-burger");
 const navLinks = document.getElementById("nav-links");
 const closeMenuButton = document.getElementById("close-burger-menu");
 
@@ -11,8 +11,7 @@ function handleScreenSize(){
 
 function handleMenuBurger(){
     menuBurger.addEventListener("click", ()=>{
-        menuBurger.classList.toggle("hide-menu-burger");
-        closeMenuButton.classList.toggle("show-close-menu");
+        menuBurger.classList.toggle("is-active");
         navLinks.classList.toggle("display-links");
     });
 }

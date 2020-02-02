@@ -1,5 +1,5 @@
 let screenWidth = window.innerWidth;
-const menuBurger = document.getElementById("menu-burger");
+const menuBurger = document.getElementById("nav-burger");
 const navLinks = document.getElementById("nav-links");
 const closeMenuButton = document.getElementById("close-burger-menu");
 const closeSkillButton = document.getElementsByClassName("close-skills");
@@ -22,8 +22,7 @@ function handleScreenSize(){
 
 function handleMenuBurger(){
     menuBurger.addEventListener("click", ()=>{
-        menuBurger.classList.toggle("hide-menu-burger");
-        closeMenuButton.classList.toggle("show-close-menu");
+        menuBurger.classList.toggle("is-active");        
         navLinks.removeEventListener("touchmove", preventScroll);
         navLinks.addEventListener("touchmove", preventScroll);
         navLinks.classList.toggle("display-links");
@@ -39,7 +38,7 @@ function closeBurgermenu(){
 }
 
 function handleSkillsLinks(){
-    console.log(linksToSkills)
+    
     linksToSkills[0].addEventListener("click", ()=>{
         skillsSection.classList.toggle("hide-skill-section");
         frontend.classList.toggle("show-skill");
@@ -59,14 +58,13 @@ function handleSkillsLinks(){
 function handleCloseSkill(){
     Array.from(closeSkillButton).forEach( button => {
         button.addEventListener("click", (e)=>{
-            console.log(e.target)
             const parent = e.target.parentNode.parentNode;
             parent.classList.toggle("show-skill");
 
             skillsSection.classList.toggle("hide-skill-section")
         });
-    })
-}
+    });
+};
 
 function navLinksScroll(){
     navLinks.addEventListener("touchmove", (e)=>{
@@ -76,7 +74,6 @@ function navLinksScroll(){
 
 handleScreenSize();
 handleMenuBurger();
-closeBurgermenu();
 handleSkillsLinks();
 handleCloseSkill();
 navLinksScroll();
