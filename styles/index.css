@@ -127,24 +127,14 @@ main{
     width: 100%;
     height: 100vh;
     padding: 0;
-    margin: 0;
-    border-radius: 1em;    
+    margin: 0;    
     background-color: red;
 }
 
-#home-section > section{
-    text-align: center;
-    position: absolute;
-    top: 31%;
-    left: 25%;
-    width: 45%;
-    height: 12em;
-    padding: 1em;
-    background-color: white;
-}
 
 #home-section h4{
     position: absolute;
+    width: 90%;
     top: 45%;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -259,6 +249,9 @@ main{
     #home-section h4{
         position: absolute;
         text-align: center;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, 37%);
     }
     
     #home-section > button{
@@ -266,6 +259,9 @@ main{
         width: 7.5em;
         height: 3.5em;
         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
         font-size: 1em;
         border-radius: .5em;
         border: .2em solid black;
@@ -308,13 +304,8 @@ main{
     }
 
     #home-section{
-        display: grid;
-        grid-template: 12.5em 12.5em 12.5em 12.5em 12.5em / 100%;
         width: 100%;
-        height: 100vh;
-        padding: 0;
-        margin: 0;
-        border-radius: 1em;    
+        margin: 0;  
     }
     
     #home-section > section{
