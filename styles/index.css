@@ -131,21 +131,47 @@ main{
     background-color: #b60002;
 }
 
+#title-container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+#title-container h2{
+    margin: 0 .2em;
+    opacity: 0;
+    color: white;
+    font-size: 2em;
+    text-shadow: .1em .1em .1em black;
+}
+
+.display-title{
+    opacity: 1 !important;
+    animation: display-title .5s ease-in;
+}
 
 #home-section h4{
     position: absolute;
+    opacity: 0;
     width: 90%;
     top: 45%;
     left: 50%;
     transform: translate(-50%, 50%);
     text-align: center;
     color: white;
+    text-shadow: .1em .1em .1em black;
 }
 
 #home-section > button{
     display: block;
-    width: 7.5em;
-    height: 3.5em;
+    opacity: 0;
+    width: 6.5em;
+    height: 3em;
     position: absolute;
     top: 55%;
     left: 50%;
@@ -246,6 +272,11 @@ main{
         color: white;
     }
 
+    #title-container h2{
+        font-size: 1.5em;
+    }
+    
+
     #home-section h4{
         position: absolute;
         text-align: center;
@@ -307,15 +338,18 @@ main{
         width: 100%;
         margin: 0;  
     }
-    
-    #home-section > section{
-        text-align: center;
-        position: unset;
-        width: 90%;
-        background-color: white;
-    }    
 
 
 
 
+}
+
+@keyframes display-title{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }
