@@ -131,12 +131,17 @@ main{
 }
 
 #skills-section p{
-    width: 6.5em;
+    width: 5em;
     margin: 0 auto;
     font-size: 1.22em;
     cursor: pointer;
     border: .1em solid black;
-    border-radius: .3em;
+    border-radius: .5em;
+    border: .08em solid white;
+    cursor: pointer;
+    background: #b60002;
+    color: white;
+    padding: .6em;
 }
 
 #skills-section p:nth-child(2){
@@ -161,7 +166,6 @@ main{
     margin: .9em auto;
     width: 70%;
     font-size: 1.22em;
-    padding: 0 .5em;
     cursor: pointer;
 }
 

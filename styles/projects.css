@@ -129,10 +129,13 @@ main{
     font-size: 1.22em;
     width: 5em;
     margin: 4.5em auto;
+    cursor: pointer;    
+    border-radius: .5em;
+    border: .08em solid white;
     cursor: pointer;
-    color: black !important;
-    border: .1em solid black;
-    border-radius: .3em;
+    background: #b60002;
+    color: white;
+    padding: .6em;
 }
 
 .hide-p{

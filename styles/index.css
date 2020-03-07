@@ -178,8 +178,10 @@ main{
     transform: translate(-50%, 50%);
     font-size: 1em;
     border-radius: .5em;
-    border: .2em solid black;
+    border: .08em solid white;
     cursor: pointer;
+    background: #b60002;
+    color: white;
 }
 
 .to-home{
@@ -338,9 +340,6 @@ main{
         width: 100%;
         margin: 0;  
     }
-
-
-
 
 }
 
