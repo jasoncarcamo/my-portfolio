@@ -112,6 +112,10 @@ main{
     padding: 0;
 }
 
+button{
+    outline: none;
+}
+
 #projects-sections{
     width: 94%;
     position: absolute;
