@@ -142,6 +142,11 @@ button{
     padding: .6em;
 }
 
+#projects-sections > p:hover{
+    background-color: white;
+    color: #b60002;
+}
+
 .hide-p{
     display: none !important;
 }

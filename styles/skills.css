@@ -133,7 +133,7 @@ main{
     text-align: center;
 }
 
-#skills-section p{
+#skills-section > p{
     width: 5em;
     margin: 0 auto;
     font-size: 1.22em;
@@ -145,6 +145,11 @@ main{
     background: #b60002;
     color: white;
     padding: .6em;
+}
+
+#skills-section > p:hover{
+    background-color: white;
+    color: #b60002;
 }
 
 #skills-section p:nth-child(2){
@@ -169,7 +174,6 @@ main{
     margin: .9em auto;
     width: 70%;
     font-size: 1.22em;
-    cursor: pointer;
 }
 
 #frontend-skills p:nth-child(1){
@@ -214,7 +218,6 @@ main{
     width: 70%;
     margin: 1em auto;
     font-size: 1.22em;
-    cursor: pointer;
 }
 
 
@@ -240,7 +243,6 @@ main{
     width: 70%;
     margin: 1em auto;
     font-size: 1.22em;
-    cursor: pointer;
 }
 
 

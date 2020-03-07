@@ -21,6 +21,7 @@ button{
     outline: none;
 }
 
+
 /* This begins nav header for screens wider than tablets*/
 
 #nav-header{
@@ -187,6 +188,11 @@ main{
     color: white;
 }
 
+#home-section > button:hover{
+    background-color: white;
+    color: #b60002;
+}
+
 .to-home{
     color: yellow;
     background-color: #b60002;
@@ -298,9 +304,7 @@ main{
         top: 50%;
         left: 50%;
         transform: translate(-50%, 50%);
-        font-size: 1em;
         border-radius: .5em;
-        border: .2em solid black;
         cursor: pointer;
     }
 
