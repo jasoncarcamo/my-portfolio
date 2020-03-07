@@ -127,10 +127,12 @@ main{
 
 #projects-sections > p{
     font-size: 1.22em;
-    width: 70%;
+    width: 5em;
     margin: 4.5em auto;
     cursor: pointer;
     color: black !important;
+    border: .1em solid black;
+    border-radius: .3em;
 }
 
 .hide-p{

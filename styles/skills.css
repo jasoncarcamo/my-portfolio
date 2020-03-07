@@ -131,10 +131,12 @@ main{
 }
 
 #skills-section p{
-    width: 60%;
+    width: 6.5em;
     margin: 0 auto;
     font-size: 1.22em;
     cursor: pointer;
+    border: .1em solid black;
+    border-radius: .3em;
 }
 
 #skills-section p:nth-child(2){
