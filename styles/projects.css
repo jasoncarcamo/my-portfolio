@@ -17,7 +17,6 @@ a{
     text-decoration: none;
 }
 
-
 /* This begins nav header for screens wider than tablets*/
 
 #nav-header{
@@ -149,6 +148,19 @@ button{
 
 .hide-p{
     display: none !important;
+}
+
+.project div div a{
+    padding: .5em 1em;
+    margin: 1em 0;
+    border: .08em solid black;
+    box-shadow: .2em .2em .5em black;
+}
+
+.project div div a:hover{
+    color: black !important;
+    background-color: white;
+    border: .1em solid white;
 }
 
 #go-back-projects{
