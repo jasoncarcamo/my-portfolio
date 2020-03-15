@@ -11,6 +11,7 @@ body{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    background-color: #b60002;
 }
 
 a{
@@ -125,6 +126,7 @@ footer{
 main{
     margin: 0;
     padding: 0;
+    
 }
 
 #home-section{
@@ -132,7 +134,6 @@ main{
     height: 100vh;
     padding: 0;
     margin: 0;    
-    background-color: #b60002;
 }
 
 #title-container{
@@ -193,46 +194,28 @@ main{
     color: #b60002;
 }
 
-.to-home{
-    color: yellow;
-    background-color: #b60002;
+#landing-page-icons-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.to-home a{
-    color: white;
-}
-
-.to-about{
-    color: purple;
-    background-color: orange;
-}
-
-.to-about a{
-    color: black;
-}
-
-.to-projects{
-    color: orange;
-    background-color: green;
-}
-
-.to-projects a{
-    color: white;
-}
-
-.to-skills{
-    color: red;
-    background-color: yellow;
-}   
-
-.to-skills a{
-    color: black;
+.landing-page-icons{
+    display: block;
+    width: 5em;
+    max-height: 4.5em;
+    margin: 0 1em;
 }
 
 /*This begins mobile view */
 @media screen and (max-width: 770px){
     body{
         font-size: 16px;
+        padding-bottom: 10em;
     }
 
     /*This begins the mobile nav header for tablets and mobile phones*/
@@ -272,6 +255,7 @@ main{
     header{
         justify-content: space-between;
         height: 3.5em;
+        
     }
 
     header > h1{
@@ -285,6 +269,11 @@ main{
 
     #title-container h2{
         font-size: 1.5em;
+    }
+
+    #home-section{
+        overflow: auto !important;
+        padding-bottom: 10em;
     }
     
 
@@ -325,6 +314,25 @@ main{
         display: flex !important;
         animation-name: navlinks !important;
         animation-duration: 1.2s !important;
+    }
+
+    #landing-page-icons-container{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        justify-content: space-evenly;
+        padding: 0;
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 4em;
+    }
+    
+    .landing-page-icons{
+        display: block;
+        width: 5em;
+        max-height: 4.5em;
+        margin: 0 1em;
     }
     
 
