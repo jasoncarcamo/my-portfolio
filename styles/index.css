@@ -206,6 +206,7 @@ main{
 
 .landing-page-icons{
     display: block;
+    opacity: 0;
     width: 5em;
     max-height: 4.5em;
     margin: 0 1em;

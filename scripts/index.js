@@ -27,9 +27,11 @@ function learnMore(){
 
 function animateTitle(){
     let titleIndex = 0;
+    let iconIndex = 0;
     const titles = document.querySelectorAll("#title-container > h2");
     const h2 = document.querySelectorAll("#home-section > h4");
     const learnMore = document.getElementById("learn-more");
+    const icons = document.getElementsByClassName("landing-page-icons");
 
     setInterval(()=>{
 
@@ -57,6 +59,19 @@ function animateTitle(){
 
         }, 300);
 
+    });
+
+    learnMore.addEventListener("animationend", (e)=>{
+        setInterval(()=>{
+            if(iconIndex === icons.length){
+                return;
+            };
+
+            icons[iconIndex].classList.add("display-title");
+
+            iconIndex++;
+            
+        }, 200);
     })
     
 }
