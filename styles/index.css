@@ -273,7 +273,7 @@ main{
 
     #home-section{
         overflow: auto !important;
-        padding-bottom: 10em;
+        padding-bottom: 5em;
     }
     
 
@@ -322,7 +322,7 @@ main{
         justify-content: space-evenly;
         padding: 0;
         position: absolute;
-        top: 88%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, 0);
         margin-bottom: 4em;
@@ -357,6 +357,8 @@ main{
     }
 
 }
+
+
 
 @keyframes display-title{
     from{
