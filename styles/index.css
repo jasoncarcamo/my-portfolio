@@ -134,6 +134,7 @@ main{
     height: 100vh;
     padding: 0;
     margin: 0;    
+    transition: all 1s;
 }
 
 #title-container{
@@ -195,7 +196,7 @@ main{
 }
 
 #landing-page-icons-container{
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     padding: 0;
     position: absolute;
@@ -204,12 +205,21 @@ main{
     transform: translate(-50%, -50%);
 }
 
+.display-container{
+    display: flex !important;
+}
+
 .landing-page-icons{
     display: block;
     opacity: 0;
     width: 5em;
     max-height: 4.5em;
     margin: 0 1em;
+}
+
+.display-icon{
+    opacity: 1 !important;
+    animation: display-icons .5s ease-in;
 }
 
 /*This begins mobile view */
@@ -318,8 +328,8 @@ main{
     }
 
     #landing-page-icons-container{
-        display: grid;
         grid-template: 1fr 1fr / 1fr 1fr;
+        grid-gap: 1em;
         justify-content: space-evenly;
         padding: 0;
         position: absolute;
@@ -328,9 +338,12 @@ main{
         transform: translate(-50%, 0);
         margin-bottom: 4em;
     }
+
+    .display-container{
+        display: grid !important;
+    }
     
     .landing-page-icons{
-        display: block;
         width: 5em;
         max-height: 4.5em;
         margin: 0 1em;
@@ -362,6 +375,16 @@ main{
 
 
 @keyframes display-title{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes display-icons{
     from{
         opacity: 0;
     }

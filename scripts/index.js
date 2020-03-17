@@ -32,6 +32,7 @@ function animateTitle(){
     const h2 = document.querySelectorAll("#home-section > h4");
     const learnMore = document.getElementById("learn-more");
     const icons = document.getElementsByClassName("landing-page-icons");
+    const iconContainer = document.getElementById("landing-page-icons-container");
 
     setInterval(()=>{
 
@@ -62,12 +63,15 @@ function animateTitle(){
     });
 
     learnMore.addEventListener("animationend", (e)=>{
+
+        iconContainer.classList.add("display-container")
+
         setInterval(()=>{
             if(iconIndex === icons.length){
                 return;
             };
 
-            icons[iconIndex].classList.add("display-title");
+            icons[iconIndex].classList.add("display-icon");
 
             iconIndex++;
             
