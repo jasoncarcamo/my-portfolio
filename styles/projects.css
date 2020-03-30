@@ -153,14 +153,14 @@ button{
 .project div div a{
     padding: .5em 1em;
     margin: 1em 0;
-    border: .08em solid black;
-    box-shadow: .2em .2em .5em black;
+    border: .08em solid white;
 }
 
 .project div div a:hover{
     color: black !important;
     background-color: white;
     border: .1em solid white;
+    border: .08em solid black;
 }
 
 #go-back-projects{
@@ -300,7 +300,6 @@ button{
         opacity: 1;
     }
 }
-
 
 /*This begins mobile view */
 @media screen and (max-width: 770px){
