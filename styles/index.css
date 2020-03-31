@@ -142,7 +142,7 @@ main{
     justify-content: center;
     margin: 0;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -165,7 +165,7 @@ main{
     position: absolute;
     opacity: 0;
     width: 90%;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, 50%);
     text-align: center;
@@ -179,7 +179,7 @@ main{
     width: 6.5em;
     height: 3em;
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, 50%);
     font-size: 1em;
@@ -200,7 +200,7 @@ main{
     justify-content: space-evenly;
     padding: 0;
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
@@ -334,10 +334,10 @@ main{
         justify-content: space-evenly;
         padding: 0;
         position: absolute;
-        top: 70%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, 0);
-        margin-bottom: 8em;
+        margin-bottom: 9em;
     }
 
     .display-container{
