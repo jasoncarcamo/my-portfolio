@@ -73,7 +73,7 @@ function navLinksScroll(){
 }
 
 handleScreenSize();
-handleMenuBurger();
+//handleMenuBurger();
 handleSkillsLinks();
 handleCloseSkill();
-navLinksScroll();
+//navLinksScroll();

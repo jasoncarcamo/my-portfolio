@@ -203,10 +203,11 @@ main{
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
 }
 
 .display-container{
-    display: flex !important;
+    display: grid !important;
 }
 
 .landing-page-icons{
