@@ -1,8 +1,8 @@
-let screenWidth = window.innerWidth;
+let screenSidth = window.innerWidth;
 
 function handleScreenWidth(){
     window.addEventListener("resize", (e)=>{
-        screenWidth = window.innerWidth;
+        screenSidth = window.innerWidth;
     });
 };
 

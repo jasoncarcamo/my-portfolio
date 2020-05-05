@@ -61,10 +61,11 @@ body{
 }
 
 #nav-links a{
-    margin: auto 1.5em;
+    margin: 1em auto;
     padding: 0;
     font-size: 1em;
     color: white !important;
+    text-align: center;
 }
 
 #nav-links a:hover{

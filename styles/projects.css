@@ -16,9 +16,10 @@
 .project{
     width: 100%;
     position: relative;
-    margin: 0;
-    padding: 0;
+    margin: 1em 0;
+    padding: 0 0 2em 0;
     min-height: 13em;
+    border-bottom: .1em solid lightgrey;
 }
 
 .display-project{
@@ -107,5 +108,9 @@
 @media screen and (max-width: 770px){
     #projects-section > section{
         grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    }
+
+    .display-project{
+        width: 100% !important;
     }
 }
