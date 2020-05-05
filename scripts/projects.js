@@ -1,87 +1,57 @@
 let screenWidth = window.innerWidth;
-const menuBurger = document.getElementById("nav-burger");
-const navLinks = document.getElementById("nav-links");
-const closeMenuButton = document.getElementById("close-burger-menu");
-const frontendProjects = document.getElementsByClassName("project-img");
-const projects = document.getElementsByClassName("project");
 
-function handleScreenSize(){
-    window.addEventListener("resize", ()=>{
+function handleScreenWidth(){
+    window.addEventListener("resize", (e)=>{
         screenWidth = window.innerWidth;
     });
-}
+};
 
-function handleMenuBurger(){
-    menuBurger.addEventListener("click", ()=>{
-        menuBurger.classList.toggle("is-active");
-        navLinks.classList.toggle("display-links");
-    });
-}
+function hoverProject(){
+    const projects = document.getElementsByClassName("project");
 
-function closeBurgermenu(){
-    closeMenuButton.addEventListener("click", ()=>{
-        menuBurger.classList.toggle("hide-menu-burger");
-        closeMenuButton.classList.toggle("show-close-menu");
-        navLinks.classList.toggle("display-links");
-    });
-}
+    Array.from(projects).forEach(( project, index)=>{
 
-function displayProjectSection(){
-    const p = document.querySelectorAll("#projects-sections > p");
-    const projects = document.querySelectorAll("#projects-sections > section");
-    const arrow = document.getElementById("go-back-projects");
+        project.addEventListener("mouseenter", (e)=>{
+            console.log($(e.target).hasClass("display-project"));
 
-    arrow.addEventListener("click", ()=>{
-        arrow.classList.toggle("show-project-arrow");
-        
-        Array.from(projects).forEach( ( pro, index) => {
-            pro.classList.remove("display-project-section");
+            if($(e.target).hasClass("display-project")){
+                return;
+            };
+
+            $(e.target).find(".project-img")[0].classList.add("fade-project");
+
+            $(e.target).find("button")[0].classList.add("display-btn");
         });
-        
-        Array.from(p).forEach( ps => {
-            ps.classList.toggle("hide");
-        });
-    });
 
-    Array.from(p).forEach( (element, index) => {
-        element.addEventListener("click", ()=>{
-            arrow.classList.toggle("show-project-arrow");
-            projects[index].classList.toggle("display-project-section");
-            Array.from(p).forEach( ps => {
-                ps.classList.toggle("hide");
+        project.addEventListener("mouseleave", (e)=>{
+            $(e.target).find(".project-img")[0].classList.remove("fade-project");
+            $(e.target).find("button")[0].classList.remove("display-btn");
+        });
+
+    });
+};
+
+function displayProject(){
+    const buttons = document.getElementsByClassName("display-project-btn");
+    const projects = document.getElementsByClassName("project");
+
+    Array.from(buttons).forEach((button, index)=>{
+        button.addEventListener("click", (e)=>{
+
+            Array.from(projects).forEach((project, i)=>{
+                if(project != $(e.target).parent()[0]){
+                    project.classList.add("hide-project");
+                };
             });
-        });
-    });
-}
-
-function displayProjectInfo(){
-    const arrow = document.getElementById("go-back-projects");
-
-    Array.from(frontendProjects).forEach( (project, index) => {
-        project.addEventListener("click", (e)=>{
-
-            arrow.classList.toggle("show-project-arrow");
-            
-            Array.from(projects).forEach( (prjs, index) => {
-                prjs.classList.toggle("hide");                
-            });
-
-            projects[index].classList.toggle("hide");
-            project.parentElement.classList.toggle("display-full-project");
-            project.nextElementSibling.classList.toggle("show-project-info");
+            console.log($(e.target).prev(".project-img")[0])
+            $(e.target).prev(".project-img")[0].classList.remove("fade-project");
+            $(e.target).parent()[0].classList.add("display-project");
+            $(e.target).next("div.project-info")[0].classList.add("display-project-info");
+            $(e.target).removeClass("display-btn")
         })
-    });
+    })
 }
 
-function navLinksScroll(){
-    navLinks.addEventListener("touchmove", (e)=>{
-        e.preventDefault();
-    });
-}
-
-
-handleScreenSize();
-handleMenuBurger();
-displayProjectSection();
-displayProjectInfo();
-navLinksScroll();
+handleScreenWidth();
+hoverProject();
+displayProject();

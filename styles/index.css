@@ -1,396 +1,87 @@
-html{
-    margin: 0;
-    padding: 0;
-    height: auto;
-}
+
 body{
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background-color: #b60002;
+    background-image: url("../images/landingpage-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-a{
-    text-decoration: none;
-}
-
-button{
-    outline: none;
-}
-
-
-/* This begins nav header for screens wider than tablets*/
-
-#nav-header{
-    display: flex;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    height: 4.12em;
-    background-color: #b60002;
-}
-
-#nav-header h1{
-    margin: auto 0;
-    padding: 0;
-}
-
-#nav-header > h1 > a{
-    font-size: .9em;
-    margin: 0 0 0 1em;
+header{
+    display: block;
+    text-align: center;
+    margin-top: 3em;
     color: white;
-    padding: 0;
 }
 
-#nav-links{
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto 1em auto 0;
-    padding: 0;
-    background-color: #b60002;
-}
-
-#nav-links a{
-    margin: auto 1.5em !important;
-    padding: 0;
-    font-size: 1em;
-    color: white !important;
-}
-
-#nav-links a:hover{
-    border-bottom: .1em solid white;
-}
-
-#current-page{
-    font-weight: bolder;
-    font-size: 1.2em !important;
-}
-
-#nav-burger{
-    display: none;
-}
-
-#close-burger-menu{
-    display: none;
-}
-
-/*Footer style starts here */
-footer{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 4.12em;
+h1{
     margin: 0;
     padding: 0;
-    background-color: white
 }
 
-.contact-icons{
+#landing-page{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 1em auto 1em auto;
-    padding: 0;
-    font-size: 1em;
-}
-
-.contact-icons a *{
-    font-size: 2em;
-}
-
-.contact-icons a:nth-child(1){
-    color: black !important;
-}
-
-.contact-icons a:nth-child(2){
-    color: #2867B2 !important;
-}
-.contact-icons a:nth-child(3){
-    color: rgb(26, 175, 138) !important;
-}
-
-/*Template ends here. Footer is included as part of the template*/
-
-/* Page unique style begins here*/
-main{
     margin: 0;
     padding: 0;
-    
 }
 
-#home-section{
-    width: 100%;
-    height: 100vh;
-    padding: 0;
-    margin: 0;    
-    transition: all 1s;
-}
-
-#title-container{
-    display: flex;
-    justify-content: center;
+#landing-page section{
+    width: 50%;
+    height: 30em;
     margin: 0;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
 }
 
-#title-container h2{
-    margin: 0 .2em;
-    opacity: 0;
-    color: white;
-    font-size: 2em;
-    text-shadow: .1em .1em .1em black;
-}
-
-.display-title{
-    opacity: 1 !important;
-    animation: display-title .5s ease-in;
-}
-
-#home-section h4{
-    position: absolute;
-    opacity: 0;
-    width: 90%;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+#landing-page-about{
+    padding: 8em 2em 0 2em;
     text-align: center;
     color: white;
-    text-shadow: .1em .1em .1em black;
 }
 
-#home-section > button{
-    display: block;
-    opacity: 0;
-    width: 6.5em;
-    height: 3em;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    font-size: 1em;
-    border-radius: .5em;
-    border: .08em solid white;
-    cursor: pointer;
-    background: #b60002;
-    color: white;
-}
-
-#home-section > button:hover{
-    background-color: white;
-    color: #b60002;
-}
-
-#landing-page-icons-container{
-    display: none;
-    justify-content: space-evenly;
+#landing-page-demo{
+    margin: 0;
     padding: 0;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
 }
 
-.display-container{
-    display: grid !important;
-}
-
-.landing-page-icons{
+#skills-demo-img{
     display: block;
-    opacity: 0;
-    width: 5em;
-    max-height: 4.5em;
-    margin: 0 1em;
+    width: 90%;
+    margin: auto;
+    padding: 0;   
 }
 
-.display-icon{
-    opacity: 1 !important;
-    animation: display-icons .5s ease-in;
+#learn-more-btn{
+    display: block;
+    margin: 0 auto 3.5em auto;
+    width: 6.5em;
+    height: 3.5em;
+    font-size: 1em;
+    background-color: white;
+    color: red;
+    border: .1em solid red;
+    border-radius: .5em;
 }
 
-/*This begins mobile view */
+#learn-more-btn:hover{
+    background-color: red;
+    color: white;
+    border: .1em solid white;
+    border-radius: .5em;
+}
+
 @media screen and (max-width: 770px){
-    body{
-        font-size: 16px;
-        padding-bottom: 10em;
-    }
-
-    /*This begins the mobile nav header for tablets and mobile phones*/
-    #nav-burger{
-        display: block;
-        position: relative;
-        top: .5em;
-        right: 1em;
-        z-index: 3;
-    }
-
-    .hide-menu-burger{
-        display: none !important;
-    }
-
-    #close-burger-menu{
-        display: none;
-        position: relative;
-        top: .5em;
-        right: .5em;
-        z-index: 3;
-        font-size: 2em;
-        padding: 0;
-    }
-
-    .show-close-menu{
-        display: block !important;
-    }
-
-    #nav-burger div{
-        background-color: white;
-        margin: .2em 0;
-        width: 1.5em;
-        height: .2em;
-    }
-
-    header{
-        justify-content: space-between;
-        height: 3.5em;
-        
-    }
-
-    header > h1{
-        margin: auto 0;
-    }
-
-    header > h1 > a{
-        margin-left: 1em;
-        color: white;
-    }
-
-    #title-container h2{
-        font-size: 1.5em;
-    }
-
-    #home-section{
-        overflow: auto !important;
-        padding-bottom: 5em;
-    }
-    
-
-    #home-section h4{
-        position: absolute;
-        text-align: center;
-        top: 37%;
-        left: 50%;
-        transform: translate(-50%, 37%);
-    }
-    
-    #home-section > button{
-        display: block;
-        width: 7.5em;
-        height: 3.5em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        border-radius: .5em;
-        cursor: pointer;
-    }
-
-    #nav-links{
-        display: none;
-        position: absolute;
-        z-index: 2;
-        top: .04em;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+    #landing-page{
         flex-direction: column;
     }
 
-    .display-links{
-        display: flex !important;
-        animation-name: navlinks !important;
-        animation-duration: 1.2s !important;
+    #landing-page-about{
+        padding: 12em 2em 0 2em;
     }
 
-    #landing-page-icons-container{
-        grid-template: 1fr 1fr / 1fr 1fr;
-        grid-gap: 1em;
-        justify-content: space-evenly;
-        padding: 0;
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        margin-bottom: 9em;
-    }
-
-    .display-container{
-        display: grid !important;
-    }
-    
-    .landing-page-icons{
-        width: 5em;
-        max-height: 4.5em;
-        margin: 0 1em;
-    }
-    
-
-    @keyframes navlinks{
-        from{
-            transform: translateX(100%);
-        }
-        to{
-            transform: translateX(0);
-        }
-    }
-
-    #nav-links a{
-        margin: 0 auto !important;
-        font-size: 1.12em;
-        color: black;
-    }
-
-    #home-section{
+    #landing-page section{
         width: 100%;
-        margin: 0;  
+        margin-bottom: 2em;
     }
 
-}
-
-
-
-@keyframes display-title{
-    from{
-        opacity: 0;
+    #skills-demo-img{
+        width: 100%;
     }
 
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes display-icons{
-    from{
-        opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-    }
 }
