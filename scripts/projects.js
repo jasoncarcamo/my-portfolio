@@ -12,18 +12,23 @@ function hoverProject(){
     Array.from(projects).forEach(( project, index)=>{
 
         project.addEventListener("mouseenter", (e)=>{
-            console.log($(e.target).hasClass("display-project"));
 
             if($(e.target).hasClass("display-project")){
+                $(e.target).find(".close-project")[0].classList.add("display-close-btn");
                 return;
             };
 
-            $(e.target).find(".project-img")[0].classList.add("fade-project");
+            if($(e.target).hasClass("display-project")){
 
+            }
+
+            
+            $(e.target).find(".project-img")[0].classList.add("fade-project");
             $(e.target).find("button")[0].classList.add("display-btn");
         });
 
         project.addEventListener("mouseleave", (e)=>{
+            $(e.target).find(".close-project")[0].classList.remove("display-close-btn");
             $(e.target).find(".project-img")[0].classList.remove("fade-project");
             $(e.target).find("button")[0].classList.remove("display-btn");
         });
@@ -43,11 +48,29 @@ function displayProject(){
                     project.classList.add("hide-project");
                 };
             });
-            console.log($(e.target).prev(".project-img")[0])
-            $(e.target).prev(".project-img")[0].classList.remove("fade-project");
+
+            $(e.target).siblings(".close-project")[0].classList.add("display-close-btn");
             $(e.target).parent()[0].classList.add("display-project");
             $(e.target).next("div.project-info")[0].classList.add("display-project-info");
+            $(e.target).prev(".project-img")[0].classList.remove("fade-project");            
             $(e.target).removeClass("display-btn")
+        })
+    })
+}
+
+function closeProject(){
+    const buttons = document.getElementsByClassName("close-project");
+    const projects = document.getElementsByClassName("project");
+
+    Array.from(buttons).forEach((button, index)=>{
+        button.addEventListener("click", (e)=>{
+            Array.from(projects).forEach((project, i)=>{
+                project.classList.remove("hide-project");  
+                project.classList.remove("display-project");             
+            });
+            console.log($(e.currentTarget).siblings())
+            $(e.currentTarget).siblings(".project-info")[0].classList.remove("display-project-info");
+            button.classList.remove("display-close-btn");  
         })
     })
 }
@@ -55,3 +78,4 @@ function displayProject(){
 handleScreenWidth();
 hoverProject();
 displayProject();
+closeProject();

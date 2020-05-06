@@ -22,6 +22,41 @@
     border-bottom: .1em solid lightgrey;
 }
 
+.close-project{
+    display: none;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 1;
+    width: 1.5em;
+    height: 1.4em;
+    padding: 0;
+    cursor: pointer;
+}
+
+.display-close-btn{
+    display: block !important;
+}
+
+.close-project div{
+    width: 1.5em;
+    height: .3em;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+}
+
+.close-project div:nth-child(1){
+    transform: rotate(45deg);
+}
+
+.close-project div:nth-child(2){
+    transform: rotate(135deg);
+}
+
 .display-project{
     width: 80% !important;
     position: absolute !important;
@@ -106,6 +141,10 @@
 }
 
 @media screen and (max-width: 770px){
+    .projects-section{
+        min-height: 90vh;
+    }
+
     #projects-section > section{
         grid-template: 1fr 1fr 1fr 1fr / 1fr;
     }
