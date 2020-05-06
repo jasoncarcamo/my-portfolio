@@ -59,14 +59,14 @@
     margin: 0 auto;
     border-radius: .4em;
     color: white;
-    background-color: red;
-    border: .1em solid white;
+    background-color: #534292;
+    border: .05em solid white;
 }
 
 .project > button:hover{
-    border: .1em solid red;
+    border: .05em solid #534292;
     background-color: white;
-    color: red;
+    color: #534292;
 }
 
 .fade-project{
@@ -93,7 +93,7 @@
 
 .project-info > div a{
     border-radius: .4em;
-    background-color: red;
+    background-color: #534292;
     border: .1em solid white;
     color: white;
     padding: .5em 1em;
@@ -101,8 +101,8 @@
 
 .project-info > div a:hover{
     background-color: white;
-    border: .1em solid red;
-    color: red;
+    border: .1em solid #534292;
+    color: #534292;
 }
 
 @media screen and (max-width: 770px){

@@ -32,7 +32,7 @@ body{
     padding: 0;
     justify-content: space-between;
     height: 4.12em;
-    background-color: red;
+    background-color: #534292;
 }
 
 #nav-header h1{
@@ -57,7 +57,8 @@ body{
     justify-content: space-evenly;
     margin: auto 1em auto 0;
     padding: 0;
-    background-color: red;
+    background-color: #534292;
+    width: 45%;
 }
 
 #nav-links a{
@@ -153,7 +154,7 @@ li{
     #nav-burger{
         display: block;
         position: relative;
-        top: .5em;
+        top: .2em;
         right: 1em;
         z-index: 4;
     }

@@ -54,13 +54,13 @@ h1{
     height: 3.5em;
     font-size: 1em;
     background-color: white;
-    color: red;
-    border: .1em solid red;
+    color: #534292;
+    border: .1em solid #534292;
     border-radius: .5em;
 }
 
 #learn-more-btn:hover{
-    background-color: red;
+    background-color: #534292;
     color: white;
     border: .1em solid white;
     border-radius: .5em;
