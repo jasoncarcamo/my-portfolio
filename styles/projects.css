@@ -8,13 +8,15 @@
     display: grid;
     grid-template: 1fr 1fr /1fr 1fr 1fr ;
     grid-gap: .6em;
-    margin: 0 auto;
+    margin: 4em auto;
     padding: 0;
     height: 100%;
 }
 
 .project-type-title{
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .hide-title{
@@ -156,6 +158,7 @@
 
     #projects-section > section > section{
         grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        grid-gap: 1em;
     }
 
     .display-project{
