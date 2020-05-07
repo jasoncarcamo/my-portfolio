@@ -4,12 +4,21 @@
     min-height: 110vh;
 }
 
-#projects-section > section{
+#projects-section > section > section{
     display: grid;
-    grid-template: 1fr 1fr 1fr /1fr 1fr 1fr ;
+    grid-template: 1fr 1fr /1fr 1fr 1fr ;
     grid-gap: .6em;
-    margin: 2em auto;
+    margin: 0 auto;
     padding: 0;
+    height: 100%;
+}
+
+.project-type-title{
+    text-align: center;
+}
+
+.hide-title{
+    display: none !important;
 }
 
 
@@ -141,11 +150,11 @@
 }
 
 @media screen and (max-width: 770px){
-    .projects-section{
-        min-height: 90vh;
+    #projects-section{
+        min-height: auto !important;
     }
 
-    #projects-section > section{
+    #projects-section > section > section{
         grid-template: 1fr 1fr 1fr 1fr / 1fr;
     }
 

@@ -17,11 +17,6 @@ function hoverProject(){
                 $(e.target).find(".close-project")[0].classList.add("display-close-btn");
                 return;
             };
-
-            if($(e.target).hasClass("display-project")){
-
-            }
-
             
             $(e.target).find(".project-img")[0].classList.add("fade-project");
             $(e.target).find("button")[0].classList.add("display-btn");
@@ -39,8 +34,10 @@ function hoverProject(){
 function displayProject(){
     const buttons = document.getElementsByClassName("display-project-btn");
     const projects = document.getElementsByClassName("project");
+    const titles = $(".project-type-title");
 
     Array.from(buttons).forEach((button, index)=>{
+
         button.addEventListener("click", (e)=>{
 
             Array.from(projects).forEach((project, i)=>{
@@ -49,6 +46,11 @@ function displayProject(){
                 };
             });
 
+            Array.from(titles).forEach((title, index)=>{
+                console.log(title);
+                title.classList.add("hide-title");
+            });
+            console.log()
             $(e.target).siblings(".close-project")[0].classList.add("display-close-btn");
             $(e.target).parent()[0].classList.add("display-project");
             $(e.target).next("div.project-info")[0].classList.add("display-project-info");
@@ -61,6 +63,7 @@ function displayProject(){
 function closeProject(){
     const buttons = document.getElementsByClassName("close-project");
     const projects = document.getElementsByClassName("project");
+    const titles = $(".project-type-title");
 
     Array.from(buttons).forEach((button, index)=>{
         button.addEventListener("click", (e)=>{
@@ -68,7 +71,11 @@ function closeProject(){
                 project.classList.remove("hide-project");  
                 project.classList.remove("display-project");             
             });
-            console.log($(e.currentTarget).siblings())
+
+            Array.from(titles).forEach((title, index)=>{
+                title.classList.remove("hide-title");
+            });
+
             $(e.currentTarget).siblings(".project-info")[0].classList.remove("display-project-info");
             button.classList.remove("display-close-btn");  
         })
