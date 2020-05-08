@@ -153,11 +153,11 @@
 
 @media screen and (max-width: 770px){
     #projects-section{
-        min-height: auto !important;
+        min-height: 7em !important;
     }
 
     #projects-section > section > section{
-        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        grid-template: auto / 1fr;
         grid-gap: 1em;
     }
 

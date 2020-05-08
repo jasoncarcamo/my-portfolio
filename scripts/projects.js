@@ -47,10 +47,9 @@ function displayProject(){
             });
 
             Array.from(titles).forEach((title, index)=>{
-                console.log(title);
                 title.classList.add("hide-title");
             });
-            console.log()
+            
             $(e.target).siblings(".close-project")[0].classList.add("display-close-btn");
             $(e.target).parent()[0].classList.add("display-project");
             $(e.target).next("div.project-info")[0].classList.add("display-project-info");
