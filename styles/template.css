@@ -154,8 +154,7 @@ li{
     #nav-burger{
         display: block;
         position: relative;
-        top: .2em;
-        right: 1em;
+        right: .8em;
         z-index: 4;
     }
 
