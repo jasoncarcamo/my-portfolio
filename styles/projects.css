@@ -153,7 +153,7 @@
 
 @media screen and (max-width: 770px){
     #projects-section{
-        min-height: 7em !important;
+        min-height: 10em !important;
     }
 
     #projects-section > section > section{
@@ -163,5 +163,9 @@
 
     .display-project{
         width: 100% !important;
+    }
+
+    .project-info  div{
+        flex-direction: column;
     }
 }
