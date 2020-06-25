@@ -163,6 +163,7 @@
 
     .display-project{
         width: 100% !important;
+        top: 55% !important;
     }
 
     .project-info  div{
