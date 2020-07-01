@@ -4,6 +4,6 @@ function learnMore(){
     button.addEventListener("click", (e)=>{
         window.location.href = "https://jasoncarcamo.github.io/my-portfolio/about.html"
     });
-}
+};
 
 learnMore();
