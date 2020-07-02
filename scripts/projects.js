@@ -78,7 +78,7 @@ function closeProject(){
             $(e.currentTarget).siblings(".project-info")[0].classList.remove("display-project-info");
             button.classList.remove("display-close-btn");  
         });
-    })
+    });
 }
 
 handleScreenWidth();
