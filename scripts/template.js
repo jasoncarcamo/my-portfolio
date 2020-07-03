@@ -41,7 +41,7 @@ function navLinksScroll(){
     navLinks.addEventListener("touchmove", (e)=>{
         e.preventDefault();
     });
-}
+};
 
 
 handleScreenSize();
