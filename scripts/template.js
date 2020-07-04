@@ -19,7 +19,7 @@ function handleMenuBurger(){
         menuBurger.classList.toggle("is-active");
         navLinks.classList.toggle("display-links");
     });
-}
+};
 
 function closeBurgermenu(){
     if(!closeMenuButton){
