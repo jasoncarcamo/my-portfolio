@@ -31,7 +31,7 @@ function closeBurgermenu(){
         closeMenuButton.classList.toggle("show-close-menu");
         navLinks.classList.toggle("display-links");
     });
-}
+};
 
 function navLinksScroll(){
     if(!navLinks){
