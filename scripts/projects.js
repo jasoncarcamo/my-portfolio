@@ -54,10 +54,11 @@ function displayProject(){
             $(e.target).parent()[0].classList.add("display-project");
             $(e.target).next("div.project-info")[0].classList.add("display-project-info");
             $(e.target).prev(".project-img")[0].classList.remove("fade-project");            
-            $(e.target).removeClass("display-btn")
+            $(e.target).removeClass("display-btn");
+            console.log();
         });
-    })
-}
+    });
+};
 
 function closeProject(){
     const buttons = document.getElementsByClassName("close-project");
