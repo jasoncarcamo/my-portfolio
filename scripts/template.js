@@ -7,7 +7,7 @@ function handleScreenSize(){
     window.addEventListener("resize", ()=>{
         screenWidth = window.innerWidth;
     });
-}
+};
 
 function handleMenuBurger(){
     
