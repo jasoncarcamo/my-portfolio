@@ -1,7 +1,7 @@
 #about-section{
     width: 95%;    
     padding: 0;
-    margin: 15em auto 0 auto;
+    margin: 25% auto 0 auto;
     line-height: 1.5em;
 }
 
@@ -20,7 +20,7 @@
 @media screen and (max-width: 770px){
     
     #about-section{
-        margin-top: 7.5em;
+        margin-top: 50%;
         padding: 0;
     }
 

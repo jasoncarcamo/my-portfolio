@@ -21,12 +21,13 @@ h1{
     display: flex;
     margin: 0;
     padding: 0;
+    height: 70vh;
 }
 
 #landing-page section{
     width: 50%;
-    height: 30em;
     margin: 0;
+    padding: 8em 2em 0 2em;
 }
 
 #landing-page-about{
@@ -49,7 +50,7 @@ h1{
 
 #learn-more-btn{
     display: block;
-    margin: 0 auto 3.5em auto;
+    margin: 2em auto 0 auto;
     width: 6.5em;
     height: 3.5em;
     font-size: 1em;
@@ -67,17 +68,26 @@ h1{
 }
 
 @media screen and (max-width: 770px){
+    header{
+        margin: 1.5em 0 0 0;
+    }
+
     #landing-page{
         flex-direction: column;
     }
 
     #landing-page-about{
-        padding: 12em 2em 0 2em;
+        padding: 0 2em 0 2em;
+    }
+
+    #learn-more-btn{
+        margin: 0 auto;
     }
 
     #landing-page section{
         width: 100%;
-        margin-bottom: 2em;
+        margin-bottom: 0;
+        padding: 0 2em 0 2em;
     }
 
     #skills-demo-img{
