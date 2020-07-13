@@ -68,12 +68,12 @@
 }
 
 .display-project{
-    width: 80% !important;
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
+    position: absolute;
+    width: 80vw !important;
+    left: 40%;
+    top: 130% !important;
     margin: 0 auto 5em auto;
-    transform: translate(-50%, -50%) !important;
+    transform: translate(-38%, -25%) !important;
 }
 
 .hide-project{
@@ -159,7 +159,8 @@
 
     .display-project{
         width: 100% !important;
-        top: 55% !important;
+        top: 100% !important;
+        left: 38% !important;
     }
 
     .project-info  div{
