@@ -3,7 +3,8 @@ $(function(){
 const menuBurger = document.getElementById("nav-burger");
 const navLinks = document.getElementById("nav-links");
 const closeMenuButton = document.getElementById("close-burger-menu");
-
+let screenWidth = window.innerWidth;
+const scrollY = window.scrollY;
 const navHeader = document.getElementById("nav-header");
 
 function navBarAnimation(){
@@ -56,13 +57,30 @@ function closeBurgermenu(){
 };
 
 function navLinksScroll(){
-    if(!navLinks){
-        return;
+    console.log(screenWidth)
+    if(screenWidth <= 1400){
+        console.log(screenWidth);
+
+        window.addEventListener("scroll", (e)=>{
+
+            if(navLinks.classList.contains("display-links")){
+                console.log("Has", window.scrollY)
+                e.preventDefault();
+            }
+        });
     };
 
     navHeader.addEventListener("touchmove", (e)=>{
         e.preventDefault();
     });
+
+    navHeader.addEventListener("scroll", (e)=>{
+        console.log(window.pageYOffset)
+        if(screenWidth >= 1400){
+            console.log(scrollY)
+            e.preventDefault();
+        }
+    })
 };
 
 
