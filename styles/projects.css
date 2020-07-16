@@ -16,7 +16,7 @@
     height: 22.5em;
     margin: 5.5em auto;
     background-color: white !important;
-    transform: translateX(-125%);
+    transform: translateX(-150%);
 }
 
 
@@ -41,12 +41,12 @@
     -webkit-animation-name: hide-project;
     -webkit-animation-duration: .6s;
     -webkit-animation-timing-function: linear;
-    transform: translateX(-125%);
+    transform: translateX(-150%);
 }
 
 @keyframes show-project{
     from{
-        transform: translateX(-125%);
+        transform: translateX(-150%);
     };
 
     to{
@@ -60,7 +60,7 @@
     };
 
     to{
-        transform: translateX(-125%);
+        transform: translateX(-150%);
     };
 }
 
