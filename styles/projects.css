@@ -3,26 +3,74 @@
     padding: 0;
 }
 
+#projects-section h2{
+    text-align: center;
+    font-size: 1.8em;
+}
+
 .project{
     display: flex;
     justify-content: center;
     flex-direction: row;
     width: 65em;
     height: 22.5em;
-    margin: 1em auto 1em auto;
+    margin: 5.5em auto;
     background-color: white !important;
+    transform: translateX(-150%);
 }
+
 
 .project:nth-child(2n){
     flex-direction: row-reverse !important;
 }
 
+.slide-project{
+    animation-name: show-project;
+    animation-duration: .9s;
+    animation-timing-function: ease-in;
+    -webkit-animation-name: show-project;
+    -webkit-animation-duration: .9s;
+    -webkit-animation-timing-function: lineard;
+    transform: translateX(0);
+}
+
+.unslide-project{
+    animation-name: hide-project;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    -webkit-animation-name: hide-project;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-timing-function: linear;
+    transform: translateX(-150%);
+}
+
+@keyframes show-project{
+    from{
+        transform: translateX(-150%);
+    };
+
+    to{
+        transform: translateX(0);
+    };
+}
+
+@keyframes hide-project{
+    from{
+        transform: translateX(0);
+    };
+
+    to{
+        transform: translateX(-150%);
+    };
+}
+
 .project img{
     align-self: center;
     width: 50%;
-    margin: 0 auto;
-    max-height: 17.5em;
+    margin: 0 auto 0 0;
+    max-height: 19.5em;
     border-radius: 1em;
+    box-shadow: 1em 1em 1em lightgrey;
     border: .1em solid lightgrey;
 }
 
@@ -42,4 +90,35 @@
     max-height: 17.5em;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    padding: 0 1em;
+}
+
+@media screen and (max-width: 1100px){
+    .project{
+        flex-direction: column;
+        width: 90%;
+        margin: 10em auto;
+    }
+
+    .project:nth-child(2n){
+        flex-direction: column !important;
+    }
+
+    .project-img{
+        width: 70% !important;
+        max-height: 23em;;
+        margin: 0 auto !important;
+    }
+
+    .project-info{
+        padding: 0;
+        margin: 0 auto;
+        min-width: unset;
+        transform: unset;
+        top: unset;
+    }
+
+    .project-info h3{
+        text-align: center;
+    }
 }
