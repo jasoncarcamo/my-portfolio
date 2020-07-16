@@ -1,7 +1,6 @@
 #projects-section{
     margin: 5em 0;
     padding: 0;
-    min-height: 110vh;
 }
 
 #projects-section > section > section{
@@ -69,12 +68,12 @@
 }
 
 .display-project{
-    width: 80% !important;
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
+    position: absolute;
+    width: 80vw !important;
+    left: 40%;
+    top: 130% !important;
     margin: 0 auto 5em auto;
-    transform: translate(-50%, -50%) !important;
+    transform: translate(-38%, -25%) !important;
 }
 
 .hide-project{
@@ -152,9 +151,6 @@
 }
 
 @media screen and (max-width: 770px){
-    #projects-section{
-        min-height: 10em !important;
-    }
 
     #projects-section > section > section{
         grid-template: auto / 1fr;
@@ -163,7 +159,8 @@
 
     .display-project{
         width: 100% !important;
-        top: 55% !important;
+        top: 100% !important;
+        left: 38% !important;
     }
 
     .project-info  div{

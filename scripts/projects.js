@@ -35,6 +35,7 @@ function displayProject(){
     const buttons = document.getElementsByClassName("display-project-btn");
     const projects = document.getElementsByClassName("project");
     const titles = $(".project-type-title");
+    const gridContainer = document.querySelector("#projects-section > section > section");
 
     Array.from(buttons).forEach((button, index)=>{
 
@@ -50,19 +51,23 @@ function displayProject(){
                 title.classList.add("hide-title");
             });
             
+            console.log(gridContainer)
+            gridContainer.style.display = "block";
             $(e.target).siblings(".close-project")[0].classList.add("display-close-btn");
             $(e.target).parent()[0].classList.add("display-project");
             $(e.target).next("div.project-info")[0].classList.add("display-project-info");
             $(e.target).prev(".project-img")[0].classList.remove("fade-project");            
-            $(e.target).removeClass("display-btn")
+            $(e.target).removeClass("display-btn");
+            console.log();
         });
-    })
-}
+    });
+};
 
 function closeProject(){
     const buttons = document.getElementsByClassName("close-project");
     const projects = document.getElementsByClassName("project");
     const titles = $(".project-type-title");
+    const gridContainer = document.querySelector("#projects-section > section > section");
 
     Array.from(buttons).forEach((button, index)=>{
         button.addEventListener("click", (e)=>{
@@ -75,6 +80,7 @@ function closeProject(){
                 title.classList.remove("hide-title");
             });
 
+            gridContainer.style.display = "grid";
             $(e.currentTarget).siblings(".project-info")[0].classList.remove("display-project-info");
             button.classList.remove("display-close-btn");  
         });
