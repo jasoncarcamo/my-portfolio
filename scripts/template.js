@@ -3,7 +3,7 @@ $(function(){
 const menuBurger = document.getElementById("nav-burger");
 const navLinks = document.getElementById("nav-links");
 const closeMenuButton = document.getElementById("close-burger-menu");
-
+let screenWidth = window.innerWidth;
 const navHeader = document.getElementById("nav-header");
 
 function navBarAnimation(){
@@ -11,6 +11,14 @@ function navBarAnimation(){
 
     window.addEventListener("scroll", (e)=>{
         let currentYOffset = window.pageYOffset;
+
+        if(screenWidth <= 1400 && navLinks.classList.contains("display-links")){
+            console.log("Has")
+            navHeader.classList.remove("hide-header");
+            navHeader.classList.add("show-header");
+
+            return;
+        }
 
         if(currentYOffset < prevYOffset){
             navHeader.classList.add("show-header");
@@ -38,6 +46,7 @@ function handleMenuBurger(){
 
     menuBurger.addEventListener("click", ()=>{
         document.querySelector("#nav-bar-container > div").classList.toggle("fade");
+        document.querySelector("#nav-bar-container").classList.toggle("show-container")
         menuBurger.classList.toggle("is-active");
         navLinks.classList.toggle("display-links");
     });

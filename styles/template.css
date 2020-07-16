@@ -102,6 +102,7 @@ footer{
 
 #nav-header h1 a{
     color: black;
+    cursor: pointer;
 }
 
 #nav-bar-container{
@@ -274,6 +275,7 @@ li{
     }
 
     #nav-bar-container{
+        display: none;
         position: absolute;
         left: 0;
         top: 0;
@@ -281,11 +283,15 @@ li{
         height: 100vh;
     }
 
+    .show-container{
+        display: block !important;
+    }
+
     #nav-bar-container > div {
-        display: block;
+        display: none;
         width: 100%;
         height: 100vh;
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
         margin: 0;
@@ -295,7 +301,7 @@ li{
 
     #nav-links{
         display: none;
-        position: fixed;
+        position: absolute;
         z-index: 2;
         top: 0;
         right: 0;
@@ -315,7 +321,8 @@ li{
     }
 
     .fade{
-        backdrop-filter: blur(.4em);
+        display: block !important;
+        backdrop-filter: blur(1em);
     }
 
     @keyframes navlinks{
