@@ -1,4 +1,5 @@
-
+$(function(){
+    
 const menuBurger = document.getElementById("nav-burger");
 const navLinks = document.getElementById("nav-links");
 const closeMenuButton = document.getElementById("close-burger-menu");
@@ -12,8 +13,8 @@ function navBarAnimation(){
         let currentYOffset = window.pageYOffset;
 
         if(currentYOffset < prevYOffset){
-            navHeader.classList.remove("hide-header");
             navHeader.classList.add("show-header");
+            navHeader.classList.remove("hide-header");
         } else{
             navHeader.classList.remove("show-header");
             navHeader.classList.add("hide-header");
@@ -69,3 +70,4 @@ handleMenuBurger();
 closeBurgermenu();
 navLinksScroll();
 navBarAnimation();
+})
