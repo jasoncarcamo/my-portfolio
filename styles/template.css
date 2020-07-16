@@ -12,96 +12,141 @@ body{
     top: 0;
     left: 0;
     font-size: 18px;
-    max-height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Playfair Display';
     border: 1px solid transparent;
 }
 
-/*Nav bar for desktops */
+main{
+    margin: 7em 0 0 0;
+    padding-bottom: 3em;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main and footer style for desktop ends here */
+
+
+/*Nav bar for desktop starts here */
+
 #nav-header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 2em 4em 0 4em;
+    width: 100vw;
+    height: 5em;
     position: fixed;
-    z-index: 2;
     top: 0;
     left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    height: 4.12em;
-    background-color: #534292;
+    transform: translateY(0);
+    z-index: 2;
+    background-color: white;
+}
+
+/* header animation togglers */
+.show-header{
+    transform: translateY(0) !important;
+    animation: ShowHeader .4s ease-in !important;
+    -webkit-animation: ShowHeader 1s ease-in !important;
+}
+
+.hide-header{
+    transform: translateY(-100%) !important;
+    animation: HideHeader .3s linear !important;
+    -webkit-animation: HideHeader 1s linear!important;
+}
+
+/* Animation for header */
+@keyframes ShowHeader{
+    from{
+        transform: translateY(-100%);
+    };
+
+    to{
+        transform: translate(0);
+    }
+}
+
+@keyframes HideHeader{
+    from{
+        transform: translateY(0);
+    };
+
+    to{
+        transform: translateY(-100%);
+    }
 }
 
 #nav-header h1{
-    margin: auto 0;
-    padding: 0;
+    font-weight: bolder;
+    font-size: 1.85em;
+    margin: 0 auto;
 }
 
-#nav-header > h1 > a{
-    font-size: .9em;
-    margin: 0 0 0 1em;
-    padding: 0;
-    color: white;
+#nav-header h1 a{
+    color: black;
 }
-
-#close-burger-menu{
-    display: none;
-}
-
 
 #nav-links{
     display: flex;
-    justify-content: space-evenly;
-    margin: auto 1em auto 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 3em;
+    min-width: 35%;
+    margin-left: auto;
     padding: 0;
-    background-color: #534292;
-    width: 45%;
 }
 
 #nav-links a{
-    margin: 1em auto;
-    padding: 0;
-    font-size: 1em;
-    color: white !important;
+    width: 4em;
+    height: 1.3em;
     text-align: center;
+    font-size: .9em;
+    color: black;
+    font-weight: bolder;
 }
 
 #nav-links a:hover{
-    border-bottom: .1em solid white;
+    border-bottom: .1em solid black;;
 }
 
-#current-page{
-    font-weight: bolder;
-    font-size: 1.2em !important;
+.project-link{
+    width: auto !important;
+    height: auto !important;
+    border: .15em solid black;
+    border-radius: .4em;
+    padding: .6em 1em !important;
+}
+
+.project-link:hover{
+    background-color: black;
+    color: white !important;
 }
 
 #nav-burger{
     display: none;
 }
-/*Nav bar for desktop ends here*/
 
-main{
-    margin: 0;
-    padding: 0;
-}
-
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-}
+/*Nav bar for desktop ends here */
 
 .contact-icons{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
 }
 
 .contact-icons a *{
@@ -148,11 +193,24 @@ li{
     }
 
     /*Mobile nav bar*/
+
+    #nav-header{
+        padding: 0;
+    }
+
+    #nav-header h1{
+        line-height: 1em;
+        font-size: 1.35em;
+        margin: 0;
+        padding: 0;
+    }
+
     #nav-burger{
         display: block;
         position: relative;
-        right: .8em;
-        z-index: 4;
+        right: .6em;
+        z-index: 3;
+        border: 1px solid black;
     }
 
     .hide-menu-burger{
@@ -210,10 +268,6 @@ li{
         display: flex !important;
         animation-name: navlinks !important;
         animation-duration: 1.2s !important;
-    }
-
-    footer{
-
     }
 
     @keyframes navlinks{
