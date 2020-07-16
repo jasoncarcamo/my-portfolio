@@ -1,0 +1,21 @@
+#view-projects{
+    padding: 0;
+}
+
+#view-projects a{
+    display: block;
+    width: 12em;
+    border: .1em solid black;
+    padding: 1.25em 1.25em;
+    margin: 8em auto;
+    border-radius: .2em;
+    background-color: white;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+}
+
+#view-projects a:hover{
+    background-color: black;
+    color: white;
+}

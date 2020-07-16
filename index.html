@@ -13,8 +13,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content="Full stack software developer, specializing in the front and back end of web applications."/>
         <title>Jason Carcamo - Full stack software developer</title>
+        <link rel="stylesheet" href="./styles/skills.css" type="text/css"/>
+        <link rel="stylesheet" href="./styles/index.css" type="text/css"/>
         <link href="./styles/template.css" rel="stylesheet" type="text/css"/>
         <link href="./styles/hamburger.css" rel="stylesheet" type="text/css"/>
+        <link href="./styles/about.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display"/>
         <link rel="icon" href="https://jasoncarcamo.github.io/portfolio-vanilla/favicon.ico" type="image/x-icon"/>          
         <script src="./scripts/template.js" async></script>
@@ -34,12 +37,15 @@
                 </span>
             </button>
 
-            <nav id="nav-links">
-                <a href="/#home">Home</a>
-                <a href="/#about">About</a>
-                <a href="/#skills">Skills</a>
-                <a href="./projects.html" class="project-link"> Projects</a>
-            </nav>
+            <div id="nav-bar-container">
+                <div></div>
+                <nav id="nav-links">
+                    <a href="/#home">Home</a>
+                    <a href="/#about">About</a>
+                    <a href="/#skills">Skills</a>
+                    <a href="./projects.html" class="project-link"> Projects</a>
+                </nav>
+            </div>
         </header>
 
         <main>
@@ -69,12 +75,69 @@
                 <p style="margin-top: 2em">Call me Jay!</p>
             </section>
 
-            <section id="view-projects">
-                <h2>Projects</h2>
+            <section id="skills-section">
+                <section id="frontend-skills">
+                    <section>
+                        <i class="fas fa-code fas-skill"></i>
+                        <h3>Frontend</h3>
+                    </section>
 
-                <a href="/projects.html">View Projects</a>
+                    <ul>
+                        <li>Html 5 ( Semantics / SEO)</li>
+                        <li>Css 3</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>React Native</li>
+                    </ul>
+                </section>
+
+                <section id="backend-skills">
+                    <section>
+                        <i class="fas fa-server fas-skill"></i>
+                        <h3>Backend / Server-side</h3>
+                    </section>
+                    
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>C#</li>
+                        <li>Express.js</li>
+                        <li>RESTful API</li>
+                        <li>Knex.js</li>
+                    </ul>
+                </section>
+                    
+                <section id="development-tools"> 
+                    <section>
+                        <i class="fas fa-hammer fas-skill"></i>
+                        <h3>Development Tools</h3>
+                    </section>
+
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Node.js</li>
+                        <li>Laravel</li>
+                        <li>ASP.NET</li>
+                        <li>Unit Testing</li>
+                        <li>Test Driven Development</li>     
+                        <li>Mocha.js</li>
+                        <li>Enzyme.js</li>
+                        <li>Jest.js</li>
+                        <li>Command Line</li>
+                        <li>Relational Databases</li>
+                        <li>Heroku</li>
+                        <li>Zeit</li>
+                    </ul>
+                </section>
             </section>
-              
+
+            <section id="view-projects">
+                <a href="./projects.html">View Projects</a>
+            </section>
+
         </main>
 
         <footer>

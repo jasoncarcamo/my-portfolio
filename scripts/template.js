@@ -37,6 +37,7 @@ function handleMenuBurger(){
     };
 
     menuBurger.addEventListener("click", ()=>{
+        document.querySelector("#nav-bar-container > div").classList.toggle("fade");
         menuBurger.classList.toggle("is-active");
         navLinks.classList.toggle("display-links");
     });
@@ -59,7 +60,7 @@ function navLinksScroll(){
         return;
     };
 
-    navLinks.addEventListener("touchmove", (e)=>{
+    navHeader.addEventListener("touchmove", (e)=>{
         e.preventDefault();
     });
 };

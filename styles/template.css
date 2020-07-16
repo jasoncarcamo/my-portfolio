@@ -5,6 +5,7 @@
 html{
     padding: 0;
     margin: 0;
+    font-size: 18px;
 }
 
 body{
@@ -23,6 +24,10 @@ body{
 main{
     margin: 7em 0 0 0;
     padding-bottom: 3em;
+}
+
+main > section {
+    margin-bottom: 7em;
 }
 
 footer{
@@ -99,6 +104,17 @@ footer{
     color: black;
 }
 
+#nav-bar-container{
+    height: 3em;
+    min-width: 35%;
+    margin-left: auto;
+    border: none;
+}
+
+#nav-bar-container > div {
+    display: none;
+}
+
 #nav-links{
     display: flex;
     align-items: center;
@@ -107,6 +123,7 @@ footer{
     min-width: 35%;
     margin-left: auto;
     padding: 0;
+    background-color: white;
 }
 
 #nav-links a{
@@ -187,6 +204,12 @@ li{
     list-style: none;
 }
 
+@media screen and (max-width: 770px){
+    #nav-links{
+        width: 100vw !important;
+    }
+}
+
 @media screen and (max-width: 1400px){
     body{
         font-size: 16px;
@@ -207,7 +230,7 @@ li{
 
     #nav-burger{
         display: block;
-        position: relative;
+        position: absolute;
         right: .6em;
         z-index: 3;
     }
@@ -250,23 +273,49 @@ li{
         margin-left: 1em;
     }
 
-    #nav-links{
-        display: none;
+    #nav-bar-container{
         position: absolute;
-        z-index: 2;
-        top: .04em;
         left: 0;
+        top: 0;
+        width: 100vw;
         height: 100vh;
+    }
+
+    #nav-bar-container > div {
+        display: block;
         width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
         margin: 0;
         padding: 0;
+        background-color: transparent;
+    }
+
+    #nav-links{
+        display: none;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        max-height: 100vh;
+        width: 50%;
+        margin: 0;
+        padding: 4em 0;
         flex-direction: column;
+        
     }
 
     .display-links{
         display: flex !important;
         animation-name: navlinks !important;
         animation-duration: 1.2s !important;
+    }
+
+    .fade{
+        backdrop-filter: blur(.4em);
     }
 
     @keyframes navlinks{
