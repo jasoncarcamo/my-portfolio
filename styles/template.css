@@ -63,13 +63,15 @@ footer{
 /* header animation togglers */
 .show-header{
     animation-name: show;
-    animation-duration: 1s;
+    animation-duration: .7s;
+    animation-timing-function: ease-in;
     transform: translateY(0)
 }
 
 .hide-header{
     animation-name: hide;
     animation-duration: 1s !important;
+    animation-timing-function: ease-out;
     transform: translateY(-100%);
 }
 
@@ -327,6 +329,7 @@ li{
     .fade{
         display: block !important;
         backdrop-filter: blur(1em);
+        -webkit-backdrop-filter: blur(1em);
     }
 
     @keyframes navlinks{
