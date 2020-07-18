@@ -83,7 +83,7 @@ $(function(){
         {
             img: "./images/julismobileapp.png",
             Name: "Julis cleaning company mobile app",
-            Description: 'Julis mobile app allows the admin to view and confirm appointments made from the company website, <a href="https://juliscleaningcompany.com" target="_blank">juliscleaningcompany.com</a>. Features include push notifications, secure log in, and email confirmation upon successful appointment set up',
+            Description: 'Julis mobile app allows the admin to view and confirm appointments made from the company website, <a href="https://juliscleaningcompany.com" target="_blank" rel="noopener">juliscleaningcompany.com</a>. Features include push notifications, secure log in, and email confirmation upon successful appointment set up',
             'Built with': "(React Native, Express, PostgreSQL, RESTful API, ASP.NET Core)",
             'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/JulisCleaningCompany-676f7ae2de854b3e88ecb3e8d0f9be73-signed.apk",
             'Download IOS version': "",
@@ -107,7 +107,7 @@ $(function(){
         for(let i = 0; i < frontendProjects.length; i++){
             let newProject = `<section class="project"> 
     
-                <img class="project-img" src="${frontendProjects[i].img}" alt="School landing page."/>
+                <img class="project-img" src="${frontendProjects[i].img}" alt="${frontendProjects[i].Name} landing page."/>
                 
                 <section>
                     
@@ -126,8 +126,8 @@ $(function(){
                         <p><strong>Used:</strong> ${frontendProjects[i]["Built with"]}</p>
     
                         <div>
-                            <a class="live-link" href='${frontendProjects[i]["View Live"]}' target='_blank' aria-label="school live page">Live page</a>
-                            <a href='${frontendProjects[i]["Github repo"]}' target='_blank' aria-label="to github repository">GitHub Repo</a>
+                            <a class="live-link" href='${frontendProjects[i]["View Live"]}' target='_blank' aria-label="${frontendProjects[i].Name} live page" rel="noopener">Live page</a>
+                            <a href='${frontendProjects[i]["Github repo"]}' target='_blank' aria-label="${frontendProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
                         </div>                    
                     </div>
     
@@ -142,7 +142,7 @@ $(function(){
         for(let i = 0; i < backendProjects.length; i++){
             let newProject = `<section class="project"> 
     
-                <img class="project-img" src="${backendProjects[i].img}" alt="School landing page."/>
+                <img class="project-img" src="${backendProjects[i].img}" alt="${backendProjects[i].Name} landing page."/>
             
                 <section>
     
@@ -161,8 +161,8 @@ $(function(){
                         <p><strong>Used:</strong> ${backendProjects[i]["Built with"]}</p>
     
                         <div>
-                            <a class="live-link" href='${backendProjects[i]["View Live"]}' target='_blank' aria-label="school live page">Live page</a>
-                            <a href='${backendProjects[i]["Github repo"]}' target='_blank' aria-label="to github repository">GitHub Repo</a>
+                            <a class="live-link" href='${backendProjects[i]["View Live"]}' target='_blank' aria-label="${backendProjects[i].Name} live page" rel="noopener">Live page</a>
+                            <a href='${backendProjects[i]["Github repo"]}' target='_blank' aria-label="${backendProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
                         </div>                    
                     </div>
     
@@ -182,7 +182,7 @@ $(function(){
                 <div></div>
             </div>                           
             
-            <img class="project-img" src="${mobileAppProjects[i].img}" alt="Julis cleaning company mobile app"/>
+            <img class="project-img" src="${mobileAppProjects[i].img}" alt="${mobileAppProjects[i].Name} mobile app"/>
     
             <button class="display-project-btn">View</button>
     
@@ -193,11 +193,15 @@ $(function(){
                 <p><strong>Used:</strong> ${mobileAppProjects[i]["Built with"]}</p>
     
                 <div>
-                    <a href="${mobileAppProjects[i]["Download Android version"]}" download="Julis cleaning mobile app">Download Android version</a>
+                    <div>
+                        <a href="${mobileAppProjects[i]["Download Android version"]}" rel="noopener" download="${mobileAppProjects[i].Name} mobile app">Download Android version</a>
+                    </div>
     
-                    <a href="${mobileAppProjects[i]["View online"]}" target="_blank">View online</a>
+                    <div>
+                        <a href="${mobileAppProjects[i]["View online"]}" target="_blank" rel="noopener">View online</a>
     
-                    <a href='${mobileAppProjects[i]["Github repo"]}' target='_blank' aria-label="To julis cleaning compoany mobile app github repository">GitHub Repo</a>
+                        <a href='${mobileAppProjects[i]["Github repo"]}' target='_blank' aria-label="${mobileAppProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
+                    </div>
                 </div>
             </div>           
         </section>`;
