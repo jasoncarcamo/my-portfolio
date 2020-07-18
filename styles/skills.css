@@ -9,19 +9,40 @@
     min-height: 30em;
     margin: 2em auto 6em 8em;
     padding: 0;
-    border: 1px solid lightgrey;
-    border-radius: .4em;
-    box-shadow: 1em 1em 1em lightgrey;
+    border: .07em solid lightgrey;
+    border-radius: 1em;
+    box-shadow: .5em 1em .5em lightgrey;
+    transform: scale(0);
 }
 
-#skills > section:nth-child(2n){
+#skills > section:nth-child(3n){
     margin: 2em 8em 6em auto;
+}
+
+.pop{
+    animation-name: pop;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    transform: scale(1) !important;
+}
+
+@keyframes pop{
+    0%{
+        transform: scale(0);
+    };
+
+    80%{
+        transform: scale(1.5);
+    };
+
+    100%{
+        transform: scale(1);
+    };
 }
 
 #skills > section > section{
     margin: 0;
     padding: 0;
-    border-bottom: .1em solid lightgrey;
 }
 
 .fas-skill{
@@ -44,12 +65,12 @@
     color: rgb(70, 70, 70);
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 900px){
 
     #skills > section{
         width: 28em;
         max-width: 85%;
-        margin: 2em auto 2em auto;
+        margin: 2em auto 2em auto !important;
     }
     
     #skills > section:nth-child(2n){
