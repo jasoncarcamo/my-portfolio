@@ -22,7 +22,7 @@ function navBarAnimation(){
             return;
         }
 
-        if(currentYOffset < prevYOffset){
+        if(currentYOffset < prevYOffset || currentYOffset === 0){
             navHeader.classList.add("show-header");
             navHeader.classList.remove("hide-header");
         } else{
