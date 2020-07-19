@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+#skills h2{
+    margin-bottom: 4em;
+}
+
 #skills > section{
     width: 28em;
     min-height: 30em;
@@ -20,24 +24,10 @@
 }
 
 .pop{
-    animation-name: pop;
-    animation-duration: .8s;
-    animation-timing-function: linear;
+    transition: transform;
+    transition-duration: .8s;
+    transition-timing-function: ease-in;
     transform: scale(1) !important;
-}
-
-@keyframes pop{
-    0%{
-        transform: scale(0);
-    };
-
-    80%{
-        transform: scale(1.5);
-    };
-
-    100%{
-        transform: scale(1);
-    };
 }
 
 #skills > section > section{

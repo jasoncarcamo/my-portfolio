@@ -79,9 +79,9 @@
 }
 
 .slide-project{
-    animation-name: showproject;
-    animation-duration: .9s;
-    animation-timing-function: ease-in;
+    transition: transform;
+    transition-duration: .9s;
+    transition-timing-function: ease-in;
     transform: translateX(0);
 }
 
@@ -93,16 +93,6 @@
     -webkit-animation-duration: .6s;
     -webkit-animation-timing-function: linear;
     transform: translateX(-150%);
-}
-
-@keyframes hide-project{
-    from{
-        transform: translateX(0);
-    };
-
-    to{
-        transform: translateX(-150%);
-    };
 }
 
 .project img{
@@ -138,7 +128,8 @@
     .project{
         flex-direction: column;
         width: 90%;
-        margin: 10em auto;
+        height: auto;
+        margin: 8em auto 12em auto;
     }
 
     .project:nth-child(2n){
