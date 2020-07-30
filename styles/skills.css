@@ -10,7 +10,7 @@
 
 #skills > section{
     width: 28em;
-    min-height: 30em;
+    height: auto;
     margin: 2em auto 6em 8em;
     padding: 0;
     border: .07em solid lightgrey;
@@ -30,7 +30,8 @@
     transform: scale(1) !important;
 }
 
-#skills > section > section{
+.skill-header{
+    height: 12em;
     margin: 0;
     padding: 0;
 }
@@ -41,12 +42,13 @@
     padding: 0;
 }
 
-#skills > section h3{
-    margin: .5em 0 1.5em 0;
+.skill-header h2{
+    margin: .5em 0 0 0;
+    padding: 0;
 }
 
 #skills > section ul{
-    margin: 2em 0;
+    margin: 0 0 3.5em 0;
     padding: 0;
 }
 
@@ -65,5 +67,8 @@
     
     #skills > section:nth-child(2n){
         margin: 2em auto 2em auto;
+    }
+
+    .skill-header{
     }
 }
