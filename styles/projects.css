@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#projects-section h2{
+main > section h2{
     text-align: center;
     font-size: 1.8em;
 }
@@ -125,11 +125,19 @@
 }
 
 @media screen and (max-width: 1100px){
+    main > section {
+        height: auto;
+    }
+
+    main > section > h2{
+        margin-bottom: 2em;
+    }
+
     .project{
         flex-direction: column;
         width: 90%;
-        height: auto;
-        margin: 8em auto 12em auto;
+        height: auto !important;
+        margin: 0 auto 5.5em auto;
     }
 
     .project:nth-child(2n){
@@ -143,11 +151,16 @@
     }
 
     .project-info{
+        position: unset;
         padding: 0;
         margin: 0 auto;
         min-width: unset;
-        transform: unset;
+        height: auto;
+        position: relative;
         top: unset;
+        min-width: unset;
+        transform: translateY(0);
+        max-height: unset;
     }
 
     .project-info h3{

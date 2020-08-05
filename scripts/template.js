@@ -15,7 +15,7 @@ function navBarAnimation(){
         let currentYOffset = window.pageYOffset;
 
         if(screenWidth <= 1400 && navLinks.classList.contains("display-links")){
-            console.log("Has")
+
             navHeader.classList.remove("hide-header");
             navHeader.classList.add("show-header");
 
@@ -79,14 +79,12 @@ function closeBurgermenu(){
 };
 
 function navLinksScroll(){
-    console.log(screenWidth)
+    
     if(screenWidth <= 1400){
-        console.log(screenWidth);
 
         window.addEventListener("scroll", (e)=>{
 
             if(navLinks.classList.contains("display-links")){
-                console.log("Has", window.scrollY)
                 e.preventDefault();
             }
         });
@@ -97,9 +95,7 @@ function navLinksScroll(){
     });
 
     navHeader.addEventListener("scroll", (e)=>{
-        console.log(window.pageYOffset)
         if(screenWidth >= 1400){
-            console.log(scrollY)
             e.preventDefault();
         }
     })
