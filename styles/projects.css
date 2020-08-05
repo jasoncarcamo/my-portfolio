@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-main > section h2{
+.project-type-title{
     text-align: center;
     font-size: 1.8em;
 }
@@ -129,7 +129,7 @@ main > section h2{
         height: auto;
     }
 
-    main > section > h2{
+    .project-type-title{
         margin-bottom: 2em;
     }
 
