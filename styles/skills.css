@@ -4,9 +4,13 @@
     text-align: center;
 }
 
+#skills h2{
+    margin-bottom: 4em;
+}
+
 #skills > section{
     width: 28em;
-    min-height: 30em;
+    height: auto;
     margin: 2em auto 6em 8em;
     padding: 0;
     border: .07em solid lightgrey;
@@ -20,27 +24,14 @@
 }
 
 .pop{
-    animation-name: pop;
-    animation-duration: .8s;
-    animation-timing-function: linear;
+    transition: transform;
+    transition-duration: .8s;
+    transition-timing-function: ease-in;
     transform: scale(1) !important;
 }
 
-@keyframes pop{
-    0%{
-        transform: scale(0);
-    };
-
-    80%{
-        transform: scale(1.5);
-    };
-
-    100%{
-        transform: scale(1);
-    };
-}
-
-#skills > section > section{
+.skill-header{
+    height: 12em;
     margin: 0;
     padding: 0;
 }
@@ -51,12 +42,13 @@
     padding: 0;
 }
 
-#skills > section h3{
-    margin: .5em 0 1.5em 0;
+.skill-header h2{
+    margin: .5em 0 0 0;
+    padding: 0;
 }
 
 #skills > section ul{
-    margin: 2em 0;
+    margin: 0 0 3.5em 0;
     padding: 0;
 }
 
@@ -67,13 +59,24 @@
 
 @media screen and (max-width: 900px){
 
+    #skills{
+        margin-top: 7.5em;
+    }
+
     #skills > section{
         width: 28em;
         max-width: 85%;
         margin: 2em auto 2em auto !important;
     }
+
+    #skills h2{
+        margin-bottom: 2em;
+    }
     
     #skills > section:nth-child(2n){
         margin: 2em auto 2em auto;
+    }
+
+    .skill-header{
     }
 }
