@@ -20,7 +20,7 @@ function navBarAnimation(){
             navHeader.classList.add("show-header");
 
             return;
-        }
+        };
 
         if(currentYOffset < prevYOffset || currentYOffset === 0){
             navHeader.classList.add("show-header");
@@ -28,7 +28,7 @@ function navBarAnimation(){
         } else{
             navHeader.classList.remove("show-header");
             navHeader.classList.add("hide-header");
-        }
+        };
 
         prevYOffset = currentYOffset;
     });
