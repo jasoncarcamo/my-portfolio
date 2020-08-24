@@ -75,7 +75,7 @@ $(function(){
             Name: "Password manager mobile app",
             Description: "Password manager mobile app allows users to save, edit, and delete passwords. Password are hashed, salted and protected from xss attacks. Features include saving, editing, and delete passwords. Sign up included.",
             'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API)",
-            'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/PasswordManager-d27b2d0d30ca411297477b7a8ae8b516-signed.apk",
+            'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/PasswordManager-93d562a5666f41da8193a69985e1d9ef-signed.apk",
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/password-manager-app",
             'Github repo': "https://github.com/jasoncarcamo/password-manager-app"
@@ -85,7 +85,7 @@ $(function(){
             Name: "Julis cleaning company mobile app",
             Description: 'Julis mobile app allows the admin to view and confirm appointments made from the company website, <a href="https://juliscleaningcompany.com" target="_blank" rel="noopener">juliscleaningcompany.com</a>. Features include push notifications, secure log in, and email confirmation upon successful appointment set up',
             'Built with': "(React Native, Express, PostgreSQL, RESTful API, ASP.NET Core)",
-            'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/JulisCleaningCompany-676f7ae2de854b3e88ecb3e8d0f9be73-signed.apk",
+            'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/JulisCleaningCompany-8f937bdae579404fb7e59271e92cfb5e-signed.apk",
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/julisapp",
             'Github repo': "https://github.com/jasoncarcamo/julisapp"
@@ -95,7 +95,7 @@ $(function(){
             Name: "Francescos Pizzeria mobile app",
             Description: "Users can browse through the restaurants menu and order online from their mobile phones. Features include ordering pick up or delivery, registering users for futures orders, and  cancelling orders. Tracker coming soon...",
             'Built with': "(React Native, Express, PostgreSQL, RESTful API, ASP.NET Core)",
-            'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/FrancescosPizzeriaClient-4b27282ff4384740b31b181316902075-signed.apk",
+            'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/FrancescosPizzeriaClient-771911f02ae84543b9cfa7a4d9d84597-signed.apk",
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/FrancescosPizzeriaClient",
             'Github repo': "https://github.com/jasoncarcamo/FrancescosMobileApp"
