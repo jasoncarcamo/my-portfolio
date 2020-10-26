@@ -225,7 +225,7 @@ $(function(){
                 if(isInViewport(project)){
                     project.classList.add("slide-project");
                 };            
-            })
+            });
         })
     };
     
