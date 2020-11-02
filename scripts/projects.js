@@ -239,7 +239,7 @@ $(function(){
             rect.bottom <= (window.innerHeight || html.clientHeight) &&
             rect.right <= (window.innerWidth || html.clientWidth)
         );
-    }
+    };
     
     addFrontProjects();
     addBackendProjects();
