@@ -226,7 +226,7 @@ $(function(){
                     project.classList.add("slide-project");
                 };            
             });
-        })
+        });
     };
     
     function isInViewport(element) {
