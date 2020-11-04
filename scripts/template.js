@@ -107,4 +107,4 @@ handleMenuBurger();
 closeBurgermenu();
 navLinksScroll();
 navBarAnimation();
-})
+});
