@@ -4,7 +4,6 @@ const menuBurger = document.getElementById("nav-burger");
 const navLinks = document.getElementById("nav-links");
 const closeMenuButton = document.getElementById("close-burger-menu");
 let screenWidth = window.innerWidth;
-const scrollY = window.scrollY;
 const navHeader = document.getElementById("nav-header");
 const navAnchors = document.querySelectorAll("#nav-links a");
 
