@@ -185,6 +185,10 @@ $(function(){
             <img class="project-img" src="${mobileAppProjects[i].img}" alt="${mobileAppProjects[i].Name} mobile app"/>
     
             <button class="display-project-btn">View</button>
+
+            <div>
+
+            </div>
     
             <div class="project-info">
                 <h3>${mobileAppProjects[i].Name}</h3>
