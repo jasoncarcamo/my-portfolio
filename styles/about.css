@@ -1,6 +1,23 @@
-#about{
-    margin: 0 0 10em 0;
-    padding: 0 25em 0 8em;
+#about-section{
+    display: flex;
+    margin: 0;
+    padding: 0 2em;
+}
+
+.about-image{
+    max-width: 50%;
+}
+
+#about-summary-container{
+    padding: 10em 10%;
+}
+
+#about-summary-container h2{
+    font-size: 2.55em;
+}
+
+#about-summary-container p{
+    font-size: .9em;
 }
 
 @media screen and (max-width: 900px){

@@ -1,6 +1,6 @@
 $(function(){
     function popSkills(){
-        const skillsSection = document.querySelectorAll("#skills > section");
+        const skillsSection = document.querySelectorAll("#skills-section > section");
 
         Array.from(skillsSection).forEach((section, index)=>{
             if(isInViewport(section)){

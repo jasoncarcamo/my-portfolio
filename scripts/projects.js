@@ -41,7 +41,9 @@ $(function(){
             Description: "Used Google's map api to create a web app that displays bedrooms and apartments for rent. The app is a prototype and has not been published yet, but spanish and english will be the main language for future users.",
             'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API)",
             'View Live': "http://serenta.jasoncarcamo30.now.sh/",
-            'Github repo': "https://github.com/jasoncarcamo/serenta-client"
+            'Github repo': "https://github.com/jasoncarcamo/serenta-client",
+            started: "Feb 20, 2019",
+            ended: "Feb 22, 2020"
         },
         {
             img: "./images/website5.png",
@@ -117,6 +119,15 @@ $(function(){
                     </div>
     
                     <button class="display-project-btn">View</button>
+
+                    <div class="author-container">
+                        <img class="author-icon" src="../images/face-shot.jfif" alt="Icon of self"/>
+
+                        <div>
+                            <p>Jason C.</p>
+                            <p>${frontendProjects[i].started ? (frontendProjects[i].started + " - " + frontendProjects[i].ended) : ""}</p>
+                        </div>
+                    </div>
     
                     <div class="project-info">
                         <h3>${frontendProjects[i].Name}</h3>
@@ -152,6 +163,15 @@ $(function(){
                     </div>
     
                     <button class="display-project-btn">View</button>
+
+                    <div class="author-container">
+                        <img class="author-icon" src="../images/face-shot.jfif" alt="Icon of self"/>
+
+                        <div>
+                            <p>Jason C.</p>
+                            <p>${backendProjects[i].started ? (backendProjects[i].started + " - " + backendProjects[i].ended) : ""}</p>
+                        </div>
+                    </div>
     
                     <div class="project-info">
                         <h3>${backendProjects[i].Name}</h3>
@@ -177,40 +197,45 @@ $(function(){
         for(let i = 0; i < mobileAppProjects.length; i++){
             let newProject = `<section class="project">
         
-            <div class="close-project">
+            <img class="project-img" src="${mobileAppProjects[i].img}" alt="${mobileAppProjects[i].Name} mobile app"/>
+
+            <section>
+                <div class="close-project">
                 <div></div>
                 <div></div>
             </div>                           
-            
-            <img class="project-img" src="${mobileAppProjects[i].img}" alt="${mobileAppProjects[i].Name} mobile app"/>
-    
+
             <button class="display-project-btn">View</button>
 
-            <div>
+            <div class="author-container">
+                <img class="author-icon" src="../images/face-shot.jfif" alt="Icon of self"/>
 
+                <div>
+                    <p>Jason C.</p>
+                    <p>${mobileAppProjects[i].started ? (mobileAppProjects[i].started + " - " + mobileAppProjects[i].ended) : ""}</p>
+                </div>
             </div>
-    
+
             <div class="project-info">
                 <h3>${mobileAppProjects[i].Name}</h3>
                 <p>${mobileAppProjects[i].Description}</p>
-    
-                <p><strong>Used:</strong> ${mobileAppProjects[i]["Built with"]}</p>
-    
+
                 <div>
                     <div>
                         <a href="${mobileAppProjects[i]["Download Android version"]}" rel="noopener" download="${mobileAppProjects[i].Name} mobile app">Download Android version</a>
                     </div>
-    
+
                     <div>
                         <a href="${mobileAppProjects[i]["View online"]}" target="_blank" rel="noopener">View online</a>
-    
+
                         <a href='${mobileAppProjects[i]["Github repo"]}' target='_blank' aria-label="${mobileAppProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
                     </div>
                 </div>
-            </div>           
+            </div> 
+            </section>
         </section>`;
     
-            $("#react-native-projects").append(newProject);
+        $("#react-native-projects").append(newProject);
         };
     };
     

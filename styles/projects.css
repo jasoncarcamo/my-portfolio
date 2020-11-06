@@ -1,6 +1,10 @@
-#projects-section{
+main{
+    background-color: rgb(241, 244, 255);
+}
+
+main > section{
     margin: 0;
-    padding: 0;
+    padding: 5em 0 0 0;
 }
 
 .project-type-title{
@@ -13,7 +17,7 @@
     justify-content: center;
     flex-direction: row;
     width: 50.5em;
-    height: 19em;
+    height: 20em;
     margin: 5.5em auto;
     padding: 0;
     background-color: white !important;
@@ -21,14 +25,47 @@
     border: .075em solid lightgrey;
 }
 
+.project > section{
+    padding: 2.22em 2.66em;
+}
+
 .close-project{
     display: none;
+}
+
+.author-container{
+    display: flex;
+    margin: .5em 0 1.5em 0;
+    padding: 0;
+    font-size: .7em;
+}
+
+.author-icon{
+    display: block;
+    max-width: 2.5em;
+    align-self: center;
+    height: 2em;
+    border-radius: 100%;
+}
+
+.author-container div{
+    margin: 0 0 0 .5em;
+    padding: 0;
+}
+
+.author-container p{
+    margin: 0;
+    padding: 0;
+}
+
+.author-container p:nth-child(2){
+    color: grey;
 }
 
 .project img{
     position: relative;
     left: 0;
-    width: 50%;
+    width: 22.65em;
     margin: 0;
     padding: 0;
     min-height: 100%;
@@ -36,22 +73,23 @@
 }
 
 .project-info{
-    min-width: 50%;
-    max-height: 100%;
-    min-height: 100%;
+    min-width: 60%;
+    height: 12.5em;
     margin: 0;
-    padding: 2.22em 2.66em;
-    border: 1px solid black;
+    padding: 0;
     overflow: auto;
+    border-bottom: .05em solid lightgrey;
 }
 
 .project-info h3{
-    font-size: 1.55em;
+    font-size: 1.5em;
     color: #303131;
+    margin: 0;
+    padding: 0;
 }
 
 .project-info p{
-    font-size: .88em;
+    font-size: .85em;
 }
 
 .project-info > div{

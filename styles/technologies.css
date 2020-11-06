@@ -1,6 +1,9 @@
 #skills-section{
-    margin: 0 0 8em 0;
-    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 1em 0 0 0;
     text-align: center;
 }
 
@@ -10,17 +13,41 @@
 
 #skills-section > section{
     width: 28em;
-    height: auto;
-    margin: 2em auto 6em 8em;
+    min-height: 90vh;
+    margin: 0 1em;
     padding: 0;
     border: .07em solid lightgrey;
-    border-radius: 1em;
-    box-shadow: .5em 1em .5em lightgrey;
     transform: scale(0);
+    color: white;
+    font-weight: bold;
 }
 
-#skills-section > section:nth-child(3n){
-    margin: 2em 8em 6em auto;
+#skills-section > section > div{
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    padding: 0 0 2em 0;
+    backdrop-filter: blur(.25em);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, .8));
+}
+
+#frontend-skills{
+    background: url("../images/frontend.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#backend-skills{
+    background: url("../images/backend.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#development-tools{
+    background: url("../images/tools.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .pop{
@@ -54,19 +81,21 @@
 
 #skills-section > section ul li {
     margin: 1em 0;
-    color: rgb(70, 70, 70);
+    color: white;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 900px){
 
     #skills-section{
-        margin-top: 7.5em;
+        flex-direction: column;
     }
 
     #skills-section > section{
         width: 28em;
-        max-width: 85%;
-        margin: 2em auto 2em auto !important;
+        max-width: 95%;
+        min-height: auto;
+        margin: 2em auto !important;
     }
 
     #skills-section h2{
@@ -75,8 +104,5 @@
     
     #skills-section > section:nth-child(2n){
         margin: 2em auto 2em auto;
-    }
-
-    .skill-header{
     }
 }
