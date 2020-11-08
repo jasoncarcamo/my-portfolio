@@ -4,7 +4,7 @@ $(function(){
             img: "./images/website1.png",
             Name: "Fake college",
             Description: "Landing page of a fake college campus",
-            'Built with': "(Html5, Css3)",
+            'Built with': "Html5, Css3",
             'View Live': "https://jasoncarcamo.github.io/schoollayout",
             'Github repo': "https://github.com/jasoncarcamo/schoollayout",
             started: "Feb 20, 2019",
@@ -14,7 +14,7 @@ $(function(){
             img: "./images/website2.png",
             Name: "Yelp revamp",
             Description: "Used React.js and Yelp's API to retrieve a list of restaurants according to user's input.",
-            'Built with': "(Html5, Css3, React.js, Yelp Api)",
+            'Built with': "Html5, Css3, React.js, Yelp Api",
             'View Live': "https://jasoncarcamo.github.io/yelp-api/",
             'Github repo': "https://github.com/jasoncarcamo/yelp-api-code",
             started: "Feb 25, 2019",
@@ -24,7 +24,7 @@ $(function(){
             img: "./images/website4.png",
             Name: "Burger restaurant",
             Description: "Used vanilla Html and Css to create a landing for for a fake burger restaurant.",
-            'Built with': "(Html, Css)",
+            'Built with': "Html, Css",
             'View Live': "https://jasoncarcamo.github.io/burgerrest/",
             'Github repo': "https://github.com/jasoncarcamo/burgerrest",
             started: "Mar 5, 2019",
@@ -34,7 +34,7 @@ $(function(){
             img: "./images/website3.png",
             Name: "Rhyming App",
             Description: "Helps you find rhyming words in english or spanish.",
-            'Built with': "(Html5, Css3, React, Rhyme brain Api)",
+            'Built with': "Html5, Css3, React, Rhyme brain Api",
             'View Live': "https://jasoncarcamo.github.io/reactrhyme/",
             'Github repo': "https://github.com/jasoncarcamo/reactrhyme-code",
             started: "Mar 10, 2019",
@@ -47,7 +47,7 @@ $(function(){
             img: "./images/serenta.png",
             Name: "Serenta",
             Description: "Used Google's map api to create a web app that displays bedrooms and apartments for rent. The app is a prototype and has not been published yet, but spanish and english will be the main language for future users.",
-            'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API)",
+            'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API",
             'View Live': "http://serenta.jasoncarcamo30.now.sh/",
             'Github repo': "https://github.com/jasoncarcamo/serenta-client",
             started: "Sep 10, 2019",
@@ -57,7 +57,7 @@ $(function(){
             img: "./images/website5.png",
             Name: "Password Manager",
             Description: "Users hash, sanitize, and provide protection against cross site scripting before saving their passwords.",
-            'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API)",
+            'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API",
             'View Live': "https://password-manager.jasoncarcamo30.now.sh/",
             'Github repo': "https://github.com/jasoncarcamo/password-manager-client",
             started: "Apr 2, 2019",
@@ -67,7 +67,7 @@ $(function(){
             img: "./images/julis.png",
             Name: "Julis Cleaning Company",
             Description: "Users get a feel of the company and can quickly request a quote with whatever the client has in mind. The admin recieves email confirmations when a user requests a quote or fills out the contact form. Admin also recieves push notifications on the mobile app version, see react native projects section.",
-            'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API, Nodemailer.js)",
+            'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API, Nodemailer.js",
             'View Live': "https://juliscleaningcompany.com/",
             'Github repo': "https://github.com/jasoncarcamo/julis-cleaning-company-client",
             started: "Aug 10, 2019",
@@ -77,7 +77,7 @@ $(function(){
             img: "./images/shoe-comp.png",
             Name: "Shoe comp",
             Description: "Users select shoes with different color combinations and add the shoe to their cart. The shoe stays in the cart incase a user did not confirm or cancel the order.",
-            'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API)",
+            'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API",
             'View Live': "https://shoe-comp-app.jasoncarcamo30.now.sh/",
             'Github repo': "https://github.com/jasoncarcamo/shoe-comp",
             started: "Apr 20, 2019",
@@ -90,7 +90,7 @@ $(function(){
             img: "./images/passwordmanagerapp.png",
             Name: "Password manager mobile app",
             Description: "Password manager mobile app allows users to save, edit, and delete passwords. Password are hashed, salted and protected from xss attacks. Features include saving, editing, and delete passwords. Sign up included.",
-            'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API)",
+            'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API",
             'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/PasswordManager-93d562a5666f41da8193a69985e1d9ef-signed.apk",
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/password-manager-app",
@@ -102,7 +102,7 @@ $(function(){
             img: "./images/julismobileapp.png",
             Name: "Julis cleaning company mobile app",
             Description: 'Julis mobile app allows the admin to view and confirm appointments made from the company website, <a href="https://juliscleaningcompany.com" target="_blank" rel="noopener">juliscleaningcompany.com</a>. Features include push notifications, secure log in, and email confirmation upon successful appointment set up',
-            'Built with': "(React Native, Express, PostgreSQL, RESTful API, ASP.NET Core)",
+            'Built with': "React Native, Express, PostgreSQL, RESTful API, ASP.NET Core",
             'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/JulisCleaningCompany-8f937bdae579404fb7e59271e92cfb5e-signed.apk",
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/julisapp",
@@ -114,7 +114,7 @@ $(function(){
             img: "./images/francescosmobileapp.png",
             Name: "Francescos Pizzeria mobile app",
             Description: "Users can browse through the restaurants menu and order online from their mobile phones. Features include ordering pick up or delivery, registering users for futures orders, and  cancelling orders. Tracker coming soon...",
-            'Built with': "(React Native, Express, PostgreSQL, RESTful API, ASP.NET Core)",
+            'Built with': "React Native, Express, PostgreSQL, RESTful API, ASP.NET Core",
             'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/FrancescosPizzeriaClient-771911f02ae84543b9cfa7a4d9d84597-signed.apk",
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/FrancescosPizzeriaClient",
@@ -127,6 +127,7 @@ $(function(){
     function addFrontProjects(){
     
         for(let i = 0; i < frontendProjects.length; i++){
+            frontendProjects[i]["Built with"] = frontendProjects[i]["Built with"].split(",").map((skill, i) => `<li> ${skill} </li>`).join("");
             let newProject = `<section class="project"> 
     
                 <img class="project-img" src="${frontendProjects[i].img}" alt="${frontendProjects[i].Name} landing page."/>
@@ -141,7 +142,7 @@ $(function(){
                     <button class="display-project-btn">View</button>
 
                     <div class="author-container">
-                        <img class="author-icon" src="/images/face-shot.jpg" alt="Icon of self"/>
+                        <img class="author-icon" src="../images/face-shot.jpeg" alt="Icon of self"/>
 
                         <div class="author-info">
                             <p>Jason C.</p>
@@ -166,7 +167,10 @@ $(function(){
     
                         <p>${frontendProjects[i].Description}</p
     
-                        <p><strong>Used:</strong> ${frontendProjects[i]["Built with"]}</p>                 
+                        <p><strong>Tech Stack:</strong></p>
+                        <ul>
+                            ${frontendProjects[i]["Built with"]}
+                        </ul>
                     </div>
     
                 </section>
@@ -178,6 +182,7 @@ $(function(){
     
     function addBackendProjects(){
         for(let i = 0; i < backendProjects.length; i++){
+            backendProjects[i]["Built with"] = backendProjects[i]["Built with"].split(",").map((skill, i) => `<li> ${skill} </li>`).join("");
             let newProject = `<section class="project"> 
     
                 <img class="project-img" src="${backendProjects[i].img}" alt="${backendProjects[i].Name} landing page."/>
@@ -192,7 +197,7 @@ $(function(){
                     <button class="display-project-btn">View</button>
 
                     <div class="author-container">
-                        <img class="author-icon" src="/images/face-shot.jpg" alt="Icon of self"/>
+                        <img class="author-icon" src="../images/face-shot.jpeg" alt="Icon of self"/>
 
                         <div class="author-info">
                             <p>Jason C.</p>
@@ -215,7 +220,10 @@ $(function(){
     
                         <p>${backendProjects[i].Description}</p
     
-                        <p><strong>Used:</strong> ${backendProjects[i]["Built with"]}</p>
+                        <p><strong>Tech Stack</strong></p>
+                        <ul
+                            ${backendProjects[i]["Built with"]}
+                        </ul>
                       
                     </div>
     
@@ -228,6 +236,7 @@ $(function(){
     
     function addMobileApps(){
         for(let i = 0; i < mobileAppProjects.length; i++){
+            mobileAppProjects[i]["Built with"] = mobileAppProjects[i]["Built with"].split(",").map((skill, i) => `<li> ${skill} </li>`).join(" ");
             let newProject = `<section class="project">
         
             <img class="project-img" src="${mobileAppProjects[i].img}" alt="${mobileAppProjects[i].Name} mobile app"/>
@@ -241,7 +250,7 @@ $(function(){
             <button class="display-project-btn">View</button>
 
             <div class="author-container">
-                <img class="author-icon" src="/images/face-shot.jpg" alt="Icon of self"/>
+                <img class="author-icon" src="../images/face-shot.jpeg" alt="Icon of self"/>
 
                 <div class="author-info">
                     <p>Jason C.</p>
@@ -265,6 +274,11 @@ $(function(){
             <div class="project-info">
                 <h3>${mobileAppProjects[i].Name}</h3>
                 <p>${mobileAppProjects[i].Description}</p>
+
+                <p><strong>Tech Stack</strong></p>
+                <ul
+                    ${mobileAppProjects[i]["Built with"]}
+                </ul>
             </div> 
             </section>
         </section>`;
