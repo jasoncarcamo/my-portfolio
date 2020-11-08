@@ -141,7 +141,7 @@ $(function(){
                     <button class="display-project-btn">View</button>
 
                     <div class="author-container">
-                        <img class="author-icon" src="../images/face-shot.jpg" alt="Icon of self"/>
+                        <img class="author-icon" src="/images/face-shot.jpg" alt="Icon of self"/>
 
                         <div class="author-info">
                             <p>Jason C.</p>
@@ -192,7 +192,7 @@ $(function(){
                     <button class="display-project-btn">View</button>
 
                     <div class="author-container">
-                        <img class="author-icon" src="../images/face-shot.jpg" alt="Icon of self"/>
+                        <img class="author-icon" src="/images/face-shot.jpg" alt="Icon of self"/>
 
                         <div class="author-info">
                             <p>Jason C.</p>
@@ -241,7 +241,7 @@ $(function(){
             <button class="display-project-btn">View</button>
 
             <div class="author-container">
-                <img class="author-icon" src="../images/face-shot.jpg" alt="Icon of self"/>
+                <img class="author-icon" src="/images/face-shot.jpg" alt="Icon of self"/>
 
                 <div class="author-info">
                     <p>Jason C.</p>
