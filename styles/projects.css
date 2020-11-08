@@ -39,10 +39,13 @@ main > section{
 
 .author-icon{
     display: block;
-    max-width: 2em;
+    width: 2em;
     align-self: center;
     height: 2em;
     border-radius: 100%;
+    background-image: url("../images/face-shot.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .author-info{
