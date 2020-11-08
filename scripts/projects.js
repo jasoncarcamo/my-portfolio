@@ -6,7 +6,9 @@ $(function(){
             Description: "Landing page of a fake college campus",
             'Built with': "(Html5, Css3)",
             'View Live': "https://jasoncarcamo.github.io/schoollayout",
-            'Github repo': "https://github.com/jasoncarcamo/schoollayout"
+            'Github repo': "https://github.com/jasoncarcamo/schoollayout",
+            started: "Feb 20, 2019",
+            ended: "Feb 20, 2019"
         },
         {
             img: "./images/website2.png",
@@ -14,7 +16,9 @@ $(function(){
             Description: "Used React.js and Yelp's API to retrieve a list of restaurants according to user's input.",
             'Built with': "(Html5, Css3, React.js, Yelp Api)",
             'View Live': "https://jasoncarcamo.github.io/yelp-api/",
-            'Github repo': "https://github.com/jasoncarcamo/yelp-api-code"
+            'Github repo': "https://github.com/jasoncarcamo/yelp-api-code",
+            started: "Feb 25, 2019",
+            ended: "Feb 25, 2019"
         },
         {
             img: "./images/website4.png",
@@ -22,7 +26,9 @@ $(function(){
             Description: "Used vanilla Html and Css to create a landing for for a fake burger restaurant.",
             'Built with': "(Html, Css)",
             'View Live': "https://jasoncarcamo.github.io/burgerrest/",
-            'Github repo': "https://github.com/jasoncarcamo/burgerrest"
+            'Github repo': "https://github.com/jasoncarcamo/burgerrest",
+            started: "Mar 5, 2019",
+            ended: "Mar 5, 2019"
         },
         {
             img: "./images/website3.png",
@@ -30,7 +36,9 @@ $(function(){
             Description: "Helps you find rhyming words in english or spanish.",
             'Built with': "(Html5, Css3, React, Rhyme brain Api)",
             'View Live': "https://jasoncarcamo.github.io/reactrhyme/",
-            'Github repo': "https://github.com/jasoncarcamo/reactrhyme-code"
+            'Github repo': "https://github.com/jasoncarcamo/reactrhyme-code",
+            started: "Mar 10, 2019",
+            ended: "Mar 10, 2019"
         }
     ];
     
@@ -42,8 +50,8 @@ $(function(){
             'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API)",
             'View Live': "http://serenta.jasoncarcamo30.now.sh/",
             'Github repo': "https://github.com/jasoncarcamo/serenta-client",
-            started: "Feb 20, 2019",
-            ended: "Feb 22, 2020"
+            started: "Sep 10, 2019",
+            ended: "Sep 17, 2019"
         },
         {
             img: "./images/website5.png",
@@ -51,7 +59,9 @@ $(function(){
             Description: "Users hash, sanitize, and provide protection against cross site scripting before saving their passwords.",
             'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API)",
             'View Live': "https://password-manager.jasoncarcamo30.now.sh/",
-            'Github repo': "https://github.com/jasoncarcamo/password-manager-client"
+            'Github repo': "https://github.com/jasoncarcamo/password-manager-client",
+            started: "Apr 2, 2019",
+            ended: "Apr 5, 2019"
         },
         {
             img: "./images/julis.png",
@@ -59,7 +69,9 @@ $(function(){
             Description: "Users get a feel of the company and can quickly request a quote with whatever the client has in mind. The admin recieves email confirmations when a user requests a quote or fills out the contact form. Admin also recieves push notifications on the mobile app version, see react native projects section.",
             'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API, Nodemailer.js)",
             'View Live': "https://juliscleaningcompany.com/",
-            'Github repo': "https://github.com/jasoncarcamo/julis-cleaning-company-client"
+            'Github repo': "https://github.com/jasoncarcamo/julis-cleaning-company-client",
+            started: "Aug 10, 2019",
+            ended: "Aug 20, 2019"
         },
         {
             img: "./images/shoe-comp.png",
@@ -67,7 +79,9 @@ $(function(){
             Description: "Users select shoes with different color combinations and add the shoe to their cart. The shoe stays in the cart incase a user did not confirm or cancel the order.",
             'Built with': "(Html5, Css3, React, Express, PostgreSQL, RESTful API)",
             'View Live': "https://shoe-comp-app.jasoncarcamo30.now.sh/",
-            'Github repo': "https://github.com/jasoncarcamo/shoe-comp"
+            'Github repo': "https://github.com/jasoncarcamo/shoe-comp",
+            started: "Apr 20, 2019",
+            ended: "Apr 25, 2019"
         }
     ];
     
@@ -80,7 +94,9 @@ $(function(){
             'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/PasswordManager-93d562a5666f41da8193a69985e1d9ef-signed.apk",
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/password-manager-app",
-            'Github repo': "https://github.com/jasoncarcamo/password-manager-app"
+            'Github repo': "https://github.com/jasoncarcamo/password-manager-app",
+            started: "Oct 15, 2019",
+            ended: "Oct 19, 2019"
         },
         {
             img: "./images/julismobileapp.png",
@@ -90,7 +106,9 @@ $(function(){
             'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/JulisCleaningCompany-8f937bdae579404fb7e59271e92cfb5e-signed.apk",
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/julisapp",
-            'Github repo': "https://github.com/jasoncarcamo/julisapp"
+            'Github repo': "https://github.com/jasoncarcamo/julisapp",
+            started: "Feb 7, 2020",
+            ended: "Feb 10, 2020"
         },
         {
             img: "./images/francescosmobileapp.png",
@@ -100,7 +118,9 @@ $(function(){
             'Download Android version': "https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40jasoncarcamo/FrancescosPizzeriaClient-771911f02ae84543b9cfa7a4d9d84597-signed.apk",
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/FrancescosPizzeriaClient",
-            'Github repo': "https://github.com/jasoncarcamo/FrancescosMobileApp"
+            'Github repo': "https://github.com/jasoncarcamo/FrancescosMobileApp",
+            started: "Jan 3, 2020",
+            ended: "Jan 14, 2020"
         }
     ];
     
@@ -123,10 +143,22 @@ $(function(){
                     <div class="author-container">
                         <img class="author-icon" src="../images/face-shot.jfif" alt="Icon of self"/>
 
-                        <div>
+                        <div class="author-info">
                             <p>Jason C.</p>
-                            <p>${frontendProjects[i].started ? (frontendProjects[i].started + " - " + frontendProjects[i].ended) : ""}</p>
+                            <p>${frontendProjects[i].started ? (frontendProjects[i].started + " <span class='date-separator'></span> " + frontendProjects[i].ended) : ""}</p>
                         </div>
+
+                        <div class="author-options">
+                            <div class="author-options-dot"> </div>
+                            <div class="author-options-dot"> </div>
+                            <div class="author-options-dot"> </div>
+
+                            <div class="project-options">
+                                <a class="live-link" href='${frontendProjects[i]["View Live"]}' target='_blank' aria-label="${frontendProjects[i].Name} View" rel="noopener">View</a>
+                                <a href='${frontendProjects[i]["Github repo"]}' target='_blank' aria-label="${frontendProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
+                            </div>
+                        </div>
+   
                     </div>
     
                     <div class="project-info">
@@ -134,12 +166,7 @@ $(function(){
     
                         <p>${frontendProjects[i].Description}</p
     
-                        <p><strong>Used:</strong> ${frontendProjects[i]["Built with"]}</p>
-    
-                        <div>
-                            <a class="live-link" href='${frontendProjects[i]["View Live"]}' target='_blank' aria-label="${frontendProjects[i].Name} live page" rel="noopener">Live page</a>
-                            <a href='${frontendProjects[i]["Github repo"]}' target='_blank' aria-label="${frontendProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
-                        </div>                    
+                        <p><strong>Used:</strong> ${frontendProjects[i]["Built with"]}</p>                 
                     </div>
     
                 </section>
@@ -167,9 +194,19 @@ $(function(){
                     <div class="author-container">
                         <img class="author-icon" src="../images/face-shot.jfif" alt="Icon of self"/>
 
-                        <div>
+                        <div class="author-info">
                             <p>Jason C.</p>
-                            <p>${backendProjects[i].started ? (backendProjects[i].started + " - " + backendProjects[i].ended) : ""}</p>
+                            <p>${backendProjects[i].started ? (backendProjects[i].started + " <span class='date-separator'></span> " + backendProjects[i].ended) : ""}</p>
+                        </div>
+
+                        <div class="author-options">
+                            <div class="author-options-dot"> </div>
+                            <div class="author-options-dot"> </div>
+                            <div class="author-options-dot"> </div>
+                            <div class="project-options">
+                                <a class="live-link" href='${backendProjects[i]["View Live"]}' target='_blank' aria-label="${backendProjects[i].Name} live page" rel="noopener">Live page</a>
+                                <a href='${backendProjects[i]["Github repo"]}' target='_blank' aria-label="${backendProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
+                            </div>  
                         </div>
                     </div>
     
@@ -179,11 +216,7 @@ $(function(){
                         <p>${backendProjects[i].Description}</p
     
                         <p><strong>Used:</strong> ${backendProjects[i]["Built with"]}</p>
-    
-                        <div>
-                            <a class="live-link" href='${backendProjects[i]["View Live"]}' target='_blank' aria-label="${backendProjects[i].Name} live page" rel="noopener">Live page</a>
-                            <a href='${backendProjects[i]["Github repo"]}' target='_blank' aria-label="${backendProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
-                        </div>                    
+                      
                     </div>
     
                 </section>
@@ -210,27 +243,28 @@ $(function(){
             <div class="author-container">
                 <img class="author-icon" src="../images/face-shot.jfif" alt="Icon of self"/>
 
-                <div>
+                <div class="author-info">
                     <p>Jason C.</p>
-                    <p>${mobileAppProjects[i].started ? (mobileAppProjects[i].started + " - " + mobileAppProjects[i].ended) : ""}</p>
+                    <p>${mobileAppProjects[i].started ? (mobileAppProjects[i].started + " <span class='date-separator'></span> " + mobileAppProjects[i].ended) : ""}</p>
+                </div>
+
+                <div class="author-options">
+                    <div class="author-options-dot"> </div>
+                    <div class="author-options-dot"> </div>
+                    <div class="author-options-dot"> </div>
+
+                    <div class="project-options">
+                        <a href="${mobileAppProjects[i]["View online"]}" target="_blank" rel="noopener">View online</a>
+
+                        <a href='${mobileAppProjects[i]["Github repo"]}' target='_blank' aria-label="${mobileAppProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
+                        <a href="${mobileAppProjects[i]["Download Android version"]}" rel="noopener" download="${mobileAppProjects[i].Name} mobile app">Download Android version</a>
+                    </div>
                 </div>
             </div>
 
             <div class="project-info">
                 <h3>${mobileAppProjects[i].Name}</h3>
                 <p>${mobileAppProjects[i].Description}</p>
-
-                <div>
-                    <div>
-                        <a href="${mobileAppProjects[i]["Download Android version"]}" rel="noopener" download="${mobileAppProjects[i].Name} mobile app">Download Android version</a>
-                    </div>
-
-                    <div>
-                        <a href="${mobileAppProjects[i]["View online"]}" target="_blank" rel="noopener">View online</a>
-
-                        <a href='${mobileAppProjects[i]["Github repo"]}' target='_blank' aria-label="${mobileAppProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
-                    </div>
-                </div>
             </div> 
             </section>
         </section>`;
@@ -254,7 +288,7 @@ $(function(){
                 if(isInViewport(project)){
                     project.classList.add("slide-project");
                 };            
-            })
+            });
         })
     };
     
@@ -268,10 +302,24 @@ $(function(){
             rect.bottom <= (window.innerHeight || html.clientHeight) &&
             rect.right <= (window.innerWidth || html.clientWidth)
         );
-    }
+    };
+
+    function toggleprojectOptions(){
+        const authorContainer = document.getElementsByClassName("author-container");
+        const authorOptions = document.getElementsByClassName("author-options");
+        const projectOptions = document.getElementsByClassName("project-options");
+
+        Array.from(authorOptions).forEach((container, containerindex)=>{
+            container.addEventListener("click", (e)=>{
+                container.children[3].classList.toggle("show-project-options")
+            })
+        });
+
+    };
     
     addFrontProjects();
     addBackendProjects();
     addMobileApps();
     slideProjects();
+    toggleprojectOptions();
 });

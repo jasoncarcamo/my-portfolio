@@ -10,7 +10,7 @@
     padding: 0;
 }
 
-#landing-page-section > div{
+#landing-page-section-container{
     width: 100%;
     position: absolute;
     top: 50%;
@@ -18,8 +18,14 @@
     transform: translate(-50%, -50%);
     color: white;
     margin: 0;
-    padding: 0;
+    padding: 0 2.5em;
     text-align: center;
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.fadein-container{
+    opacity: 1 !important;
 }
 
 #landing-page-section h2{
@@ -33,7 +39,7 @@
     padding: 0;
 }
 
-#landing-page-section a{
+#view-more{
     display: block;
     font-size: 1em;
     margin: 1.5em auto;
@@ -41,10 +47,30 @@
     border: 1px solid white;
     width: 8em;
     color: white;
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.fadein-viewmore{
+    opacity: 1 !important;
 }
 
 #landing-page-section a:hover{
     border: 1px solid black;
     color: white;
     background-color: black;
+}
+
+@media screen and (max-width: 1300px){
+    #landing-page-section{
+        height: 75vh;
+    }
+
+    #landing-page-section h2 {
+        font-size: 2.8em;
+    }
+
+    #landing-page-section p {
+        font-size: 1em;
+    }
 }

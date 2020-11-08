@@ -1,7 +1,3 @@
-main{
-    background-color: rgb(241, 244, 255);
-}
-
 main > section{
     margin: 0;
     padding: 5em 0 0 0;
@@ -16,8 +12,8 @@ main > section{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 50.5em;
-    height: 20em;
+    width: 50em;
+    height: 18.5em;
     margin: 5.5em auto;
     padding: 0;
     background-color: white !important;
@@ -35,6 +31,7 @@ main > section{
 
 .author-container{
     display: flex;
+    position: relative;
     margin: .5em 0 1.5em 0;
     padding: 0;
     font-size: .7em;
@@ -42,15 +39,76 @@ main > section{
 
 .author-icon{
     display: block;
-    max-width: 2.5em;
+    max-width: 2em;
     align-self: center;
     height: 2em;
     border-radius: 100%;
 }
 
-.author-container div{
+.author-info{
     margin: 0 0 0 .5em;
     padding: 0;
+}
+
+.date-separator{
+    display: inline-block;
+    align-self: center;
+    width: .25em;
+    height: .25em;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-65%);
+    background-color: grey;
+}
+
+.author-options{
+    margin: 0 0 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.author-options-dot{
+    border-radius: 100%;
+    width: .45em;
+    height: .45em;
+    background-color: black;
+    margin: .06em 0;
+}
+
+.project-options{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 2em;
+    right: 0;
+    border: 1px solid black;
+    width: 10em;
+    background-color: white;
+}
+
+.show-project-options{
+    display: flex !important;
+}
+
+.project-options a{
+    text-align: center;
+    padding: .5em 0;
+    font-size: 1em;
+    color: black;
+}
+
+.project-options a:nth-child(1){
+    border-bottom: .05em solid lightgrey;
+}
+
+.project-options a:hover{
+    background-color: lightgray;
 }
 
 .author-container p{
@@ -63,8 +121,7 @@ main > section{
 }
 
 .project img{
-    position: relative;
-    left: 0;
+    display: block;
     width: 22.65em;
     margin: 0;
     padding: 0;
@@ -74,7 +131,7 @@ main > section{
 
 .project-info{
     min-width: 60%;
-    height: 12.5em;
+    height: 11em;
     margin: 0;
     padding: 0;
     overflow: auto;
@@ -144,7 +201,7 @@ main > section{
 
 .slide-project{
     transition: transform;
-    transition-duration: .9s;
+    transition-duration: .6s;
     transition-timing-function: ease-in;
     transform: translateX(0);
 }
@@ -175,36 +232,36 @@ main > section{
     .project{
         flex-direction: column;
         width: 100%;
-        height: auto !important;
-        margin: 0 auto 5.5em auto;
-        padding: 1em 1.5em;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
         border-top: none;
-        border-right: none;
         border-left: none;
+        border-right: none;
+    }
+
+    .project > section{
+        padding: 2.22em 1em;
     }
 
     .project:nth-child(2n){
         flex-direction: column !important;
     }
 
-    .project-img{
-        width: 75% !important;
-        max-height: 24em;;
-        margin: 0 auto !important;
-        box-shadow: .1em .1em 1em lightgrey !important;
+    .project img{
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+        min-height: unset;
+        max-height: unset;
     }
 
     .project-info{
-        position: unset;
+        min-width: 100% !important;
+        max-height: 60%;
+        margin: 0;
         padding: 0;
-        margin: 0 auto;
-        min-width: unset;
-        height: auto;
-        position: relative;
-        top: unset;
-        min-width: unset;
-        transform: translateY(0);
-        max-height: unset;
+        overflow: auto;
     }
 
     .project-info h3{

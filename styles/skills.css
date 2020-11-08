@@ -25,7 +25,7 @@
 
 .pop{
     transition: transform;
-    transition-duration: .8s;
+    transition-duration: .6s;
     transition-timing-function: ease-in;
     transform: scale(1) !important;
 }
