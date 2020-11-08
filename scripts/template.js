@@ -57,7 +57,7 @@ function handleMenuBurger(){
     }
 
     menuBurger.addEventListener("click", ()=>{
-        document.querySelector("#nav-bar-container > div").classList.toggle("fade");
+        document.querySelector("#nav-bar-container > nav").classList.toggle("fade");
         document.querySelector("#nav-bar-container").classList.toggle("show-container")
         menuBurger.classList.toggle("is-active");
         navLinks.classList.toggle("display-links");

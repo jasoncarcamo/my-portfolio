@@ -1,19 +1,17 @@
 $(function(){
     function popSkills(){
-        const skillsSection = document.querySelectorAll("#skills > section");
+        const frontendSkills = document.getElementById("frontend-skills");
+        const backendSkills = document.getElementById("backend-skills");
+        const tools = document.getElementById("development-tools");
 
-        Array.from(skillsSection).forEach((section, index)=>{
-            if(isInViewport(section)){
-                skillsSection[index].classList.add("pop");
-            };
+        frontendSkills.classList.add("pop");
+
+        frontendSkills.addEventListener("transitionend", (e)=>{
+            backendSkills.classList.add("pop");
         });
 
-        window.addEventListener("scroll", (e)=>{
-            Array.from(skillsSection).forEach((skill, index)=>{
-                if(isInViewport(skill)){
-                    skillsSection[index].classList.add("pop");
-                };
-            });
+        backendSkills.addEventListener("transitionend", (e)=>{
+            tools.classList.add("pop");
         });
     };
 
