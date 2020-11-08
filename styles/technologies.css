@@ -85,14 +85,14 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1300px){
 
     #skills-section{
         flex-direction: column;
     }
 
     #skills-section > section{
-        width: 28em;
+        width: 80%;
         max-width: 95%;
         min-height: auto;
         margin: 2em auto !important;
