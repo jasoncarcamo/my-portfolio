@@ -328,7 +328,6 @@ $(function(){
                 container.children[3].classList.toggle("show-project-options")
             })
         });
-
     };
     
     addFrontProjects();
