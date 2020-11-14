@@ -326,7 +326,7 @@ $(function(){
         Array.from(authorOptions).forEach((container, containerindex)=>{
             container.addEventListener("click", (e)=>{
                 container.children[3].classList.toggle("show-project-options")
-            })
+            });
         });
     };
     
