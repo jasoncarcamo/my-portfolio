@@ -319,9 +319,7 @@ $(function(){
     };
 
     function toggleprojectOptions(){
-        const authorContainer = document.getElementsByClassName("author-container");
         const authorOptions = document.getElementsByClassName("author-options");
-        const projectOptions = document.getElementsByClassName("project-options");
 
         Array.from(authorOptions).forEach((container, containerindex)=>{
             container.addEventListener("click", (e)=>{
