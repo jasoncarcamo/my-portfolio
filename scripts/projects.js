@@ -288,7 +288,6 @@ $(function(){
     };
     
     function slideProjects(){
-        const projectSection = document.getElementById("projects-section");
         const projects = document.getElementsByClassName("project");
     
         Array.from(projects).forEach((project, index)=>{
