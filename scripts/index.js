@@ -12,7 +12,6 @@ $(function(){
         container.addEventListener("transitionend", (e)=>{
             viewMore.classList.add("fadein-viewmore");
         });
-
     }
 
     fadeInWord();
