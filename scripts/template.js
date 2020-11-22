@@ -96,7 +96,7 @@ function navLinksScroll(){
     navHeader.addEventListener("scroll", (e)=>{
         if(screenWidth >= 1400){
             e.preventDefault();
-        }
+        };
     })
 };
 
