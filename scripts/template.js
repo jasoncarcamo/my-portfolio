@@ -85,7 +85,7 @@ function navLinksScroll(){
 
             if(navLinks.classList.contains("display-links")){
                 e.preventDefault();
-            }
+            };
         });
     };
 
@@ -97,9 +97,8 @@ function navLinksScroll(){
         if(screenWidth >= 1400){
             e.preventDefault();
         };
-    })
+    });
 };
-
 
 handleScreenSize();
 handleMenuBurger();
