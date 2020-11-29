@@ -176,7 +176,7 @@ $(function(){
                 </section>
             </section>`;
             
-            $("#frontend-projects").append(newProject)
+            $("#frontend-projects").append(newProject);
         };
     };
     
