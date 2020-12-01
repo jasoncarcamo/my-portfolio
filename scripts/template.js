@@ -100,9 +100,9 @@ function navLinksScroll(){
     });
 };
 
-handleScreenSize();
-handleMenuBurger();
-closeBurgermenu();
-navLinksScroll();
-navBarAnimation();
+    handleScreenSize();
+    handleMenuBurger();
+    closeBurgermenu();
+    navLinksScroll();
+    navBarAnimation();
 });
