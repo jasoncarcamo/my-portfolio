@@ -14,6 +14,7 @@ $(function(){
             viewMore.classList.add("fadein-viewmore");
         });
     };
+    
 
     fadeInWord();
     fadeInViewMore();
