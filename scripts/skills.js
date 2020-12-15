@@ -15,6 +15,7 @@ $(function(){
             tools.classList.add("pop");
         });
     };
+    
 
     popSkills();
 });
