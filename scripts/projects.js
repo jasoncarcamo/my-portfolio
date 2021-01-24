@@ -327,7 +327,6 @@ $(function(){
         });
     };
     
-    
     addFrontProjects();
     addBackendProjects();
     addMobileApps();
