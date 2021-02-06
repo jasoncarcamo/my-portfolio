@@ -127,7 +127,8 @@ $(function(){
     function addFrontProjects(){
     
         for(let i = 0; i < frontendProjects.length; i++){
-            frontendProjects[i]["Built with"] = frontendProjects[i]["Built with"].split(",").map((skill, i) => `<li> ${skill} </li>`).join("");
+            frontendProjects[i]["Built with"] = frontendProjects[i]["Built with"].split(",").map((skill, i) => `<li>${skill}</li>`).join("");
+            console.log(frontendProjects[i]["Built with"])
             let newProject = `<section class="project"> 
     
                 <img class="project-img" src="${frontendProjects[i].img}" alt="${frontendProjects[i].Name} landing page."/>
@@ -182,7 +183,7 @@ $(function(){
     
     function addBackendProjects(){
         for(let i = 0; i < backendProjects.length; i++){
-            backendProjects[i]["Built with"] = backendProjects[i]["Built with"].split(",").map((skill, i) => `<li> ${skill} </li>`).join("");
+            backendProjects[i]["Built with"] = backendProjects[i]["Built with"].split(",").map((skill, i) => `<li>${skill}</li>`).join("");
             let newProject = `<section class="project"> 
     
                 <img class="project-img" src="${backendProjects[i].img}" alt="${backendProjects[i].Name} landing page."/>
@@ -209,7 +210,7 @@ $(function(){
                             <div class="author-options-dot"> </div>
                             <div class="author-options-dot"> </div>
                             <div class="project-options">
-                                <a class="live-link" href='${backendProjects[i]["View Live"]}' target='_blank' aria-label="${backendProjects[i].Name} live page" rel="noopener">Viewe</a>
+                                <a class="live-link" href='${backendProjects[i]["View Live"]}' target='_blank' aria-label="${backendProjects[i].Name} live page" rel="noopener">View</a>
                                 <a href='${backendProjects[i]["Github repo"]}' target='_blank' aria-label="${backendProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
                             </div>  
                         </div>
@@ -236,7 +237,7 @@ $(function(){
     
     function addMobileApps(){
         for(let i = 0; i < mobileAppProjects.length; i++){
-            mobileAppProjects[i]["Built with"] = mobileAppProjects[i]["Built with"].split(",").map((skill, i) => `<li> ${skill} </li>`).join(" ");
+            mobileAppProjects[i]["Built with"] = mobileAppProjects[i]["Built with"].split(",").map((skill, i) => `<li>${skill}</li>`).join(" ");
             let newProject = `<section class="project">
         
             <img class="project-img" src="${mobileAppProjects[i].img}" alt="${mobileAppProjects[i].Name} mobile app"/>
