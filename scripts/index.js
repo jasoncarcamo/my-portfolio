@@ -15,6 +15,7 @@ $(function(){
         });
     };
     
+    
     fadeInWord();
     fadeInViewMore();
 });
