@@ -21,7 +21,7 @@
     padding: 0 2.5em;
     text-align: center;
     opacity: 0;
-    transition: 1.2s;
+    transition: opacity 2.4s;
 }
 
 .fadein-container{
@@ -31,13 +31,15 @@
 #landing-page-section h2{
     font-size: 3.8em;
     margin: 0;
+    text-shadow: -.07em .04em .05em rgb(6, 6, 30);
 }
 
 #landing-page-section p{
     font-size: 1em;
     margin: 0 auto;
     padding: 0;
-    width: 35em;
+    width: 32em;
+    text-shadow: -.07em .04em .05em rgb(6, 6, 30);
 }
 
 #view-more{
@@ -49,7 +51,7 @@
     width: 8em;
     color: white;
     opacity: 0;
-    transition: 1.2s;
+    transition: .2s;
 }
 
 .fadein-viewmore{

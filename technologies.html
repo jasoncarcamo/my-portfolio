@@ -17,7 +17,9 @@
         <link href="./styles/technologies.css" rel="stylesheet" type="text/css"/>
         <link href="./styles/hamburger.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel"/>
-        <link rel="icon" href="https://jasoncarcamo.github.io/portfolio-vanilla/favicon.ico" type="image/x-icon"/>          
+        <link rel="icon" href="https://jasoncarcamo.github.io/portfolio-vanilla/favicon.ico" type="image/x-icon"/>
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">          
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
         <script src="https://kit.fontawesome.com/6f089298a1.js"></script>
         <script src="./scripts/template.js" async></script>
@@ -40,75 +42,85 @@
                     <a href="./index.html#home">Home</a>
                     <a href="./technologies.html">Technologies</a>
                     <a href="./projects.html">Projects</a>
-                    <a href="./about.html">About</a>
+                    <a href="./about.html">About me</a>
                 </nav>
             </div>
         </header>
         <main>
-            <section id="skills-section">
-                
-                <section id="frontend-skills">
-                    <div>
-                        <header class="skill-header">
-                            <i class="fas fa-code fas-skill"></i>
-                            <h2>Frontend</h2>
-                        </header>
-    
-                        <ul>
-                            <li>Html 5 ( Semantics / SEO)</li>
-                            <li>Css 3</li>
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
-                            <li>React.js</li>
-                            <li>React Native</li>
-                        </ul>
+            <section id="skills-section">    
+
+                <section id="html-skill" class="skill splash">
+                    <div class="skill-title-container">
+                        <h2>Semantic HTML – Structured for SEO & Accessibility</h2>
+                        <p>I start every project with a strong foundation in semantic HTML, ensuring that content is structured logically for both humans and devices. By following best practices in coding, I help improve search engine visibility, support screen readers, and minimize technical issues, for big and small, web applications.</p>
                     </div>
+                    
+                    <div>a picture</div>
                 </section>
 
-                <section id="backend-skills">
-                    <div>
-                        <header class="skill-header">
-                            <i class="fas fa-server fas-skill"></i>
-                            <h2>Backend / Server-side</h2>
-                        </header>
-                        
-                        <ul>
-                            <li>PHP</li>
-                            <li>MySQL</li>
-                            <li>PostgreSQL</li>
-                            <li>C#</li>
-                            <li>Express.js</li>
-                            <li>RESTful API</li>
-                            <li>Knex.js</li>
-                        </ul>
+                <section id="css-skill" class="skill">
+                    <div class="skill-title-container">
+                        <h2>Responsive, Mobile-First design</h2>
+                        <p>I build fully responsive, mobile-friendly interfaces using Flexbox, CSS Grid, and media queries. Whether it’s a complex dashboard or a landing page, my layouts are designed to adapt seamlessly across all devices. I follow scalable modern CSS methodologies to ensure maintainability across teams and consistency in design.</p>
                     </div>
-                </section>
                     
-                <section id="development-tools"> 
-                    <div>
-                        <header class="skill-header">
-                            <i class="fas fa-hammer fas-skill"></i>
-                            <h2>Development Tools</h2>
-                        </header>
-    
-                        <ul>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Node.js</li>
-                            <li>Laravel</li>
-                            <li>ASP.NET</li>
-                            <li>Unit Testing</li>
-                            <li>Test Driven Development</li>     
-                            <li>Mocha.js</li>
-                            <li>Enzyme.js</li>
-                            <li>Jest.js</li>
-                            <li>Command Line</li>
-                            <li>Relational Databases</li>
-                            <li>Heroku</li>
-                            <li>Zeit</li>
-                        </ul>
-                    </div>
+                    <div></div>
                 </section>
+
+                <section id="node-skill" class="skill">
+                    <div class="skill-title-container">
+                        <h2>Node.js & Express – Building Back End that Scales</h2>
+                        <p>On the server side, I develop fast, reliable back-end systems using Node.js and Express.js. My API architecture is clean, modular, and scalable — with well-structured routing, reusable middleware, and secure, environment-aware configurations.</p>
+                    </div>
+                    
+                    <div></div>
+                </section>
+
+                <section id="test-skill" class="skill">
+                    <div class="skill-title-container">
+                        <h2>Test-Driven Development (TDD)</h2>
+                        <p>I prioritize code reliability through test-driven development, writing unit and integration tests using Jest or Mocha. This approach allows me to ship features quickly without sacrificing stability or scalability — a critical standard for enterprise systems.</p>
+                    </div>
+                    
+                    <div></div>
+                </section>
+
+                <section id="api-skill" class="skill">
+                    <div class="skill-title-container">
+                        <h2>RESTful API Design – Consistent, Versioned, Developer-Friendly</h2>
+                        <p>I design APIs with RESTful best practices, ensuring consistent response structures, proper versioning, and thoughtful handling of errors and edge cases. I document endpoints clearly to support easy front-end integration, third-party use, or mobile app consumption.</p>
+                    </div>
+                    
+                    <div></div>
+                </section>
+                
+                <section id="sql-skill" class="skill">
+                    <div class="skill-title-container">
+                        <h2>MySQL & PostgreSQL – Structured Data for High Performance</h2>
+                        <p>With experience in both MySQL and PostgreSQL, I design normalized, relational schemas that scale efficiently and remain easy to query and maintain. I optimize performance through indexing, constraint management, and query tuning.</p>
+                    </div>
+                    
+                    <div></div>
+                </section>
+
+                <section id="git-skill" class="skill">
+                    <div class="skill-title-container">
+                        <h2>Git & GitHub – Clean Collaboration & Source Control</h2>
+                        <p>I use Git and GitHub to manage codebases with clarity — employing branching strategies, pull requests, and code reviews to maintain quality and speed across teams. I integrate GitHub into CI/CD pipelines for automated testing and deployments.</p>
+                    </div>
+                    
+                    <div></div>
+                </section>
+
+                <section id="heroku-skill" class="skill">
+                    <div class="skill-title-container">
+                        <h2>Mobile-Friendly Deployment with Vercel & Heroku</h2>
+                        <p>I deploy mobile-first applications using platforms like Vercel (for front-end and static hosting) and Heroku (for back-end APIs and staging environments). My deployment strategy ensures fast performance on all devices, with zero-downtime rollouts and environment configuration for development, staging, and production.</p>
+                    </div>
+                    
+                    <div></div>
+                </section>
+
             </section>
         </main>
         <footer>
@@ -117,7 +129,7 @@
 
                 <a href='https://www.linkedin.com/in/jason-carcamo-78217717b/' rel="noopener" target="blank" aria-label="to linked in profile"><i class="fab fa-linkedin"></i></a>
 
-                <a href='mailto:jasoncarcamo30@yahoo.com' aria-label="email jason here"><i class="fas fa-envelope"></i></a>
+                <a href='mailto:jasoncarcamo30@gmail.com' aria-label="email jason here"><i class="fas fa-envelope"></i></a>
             </div>
         </footer>
     </body>

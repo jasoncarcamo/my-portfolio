@@ -9,15 +9,23 @@
 }
 
 #about-summary-container{
-    padding: 10em 10%;
-}
-
-#about-summary-container h2{
-    font-size: 2.55em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    background-color: #f1ece5;
 }
 
 #about-summary-container p{
-    font-size: .9em;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about-summary-container h2{
+    font-size: 2.75em;
+    text-shadow: -.07em .04em .05em rgb(6, 6, 30);
 }
 
 @media screen and (max-width: 1300px){

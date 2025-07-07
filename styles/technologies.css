@@ -1,108 +1,83 @@
 #skills-section{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     margin: 0;
-    padding: 1em 0 0 0;
+    padding: 0;
     text-align: center;
 }
 
-#skills-section h2{
-    margin-bottom: 4em;
-}
-
-#skills-section > section{
-    width: 28em;
-    min-height: 90vh;
-    margin: 0 1em;
-    padding: 0;
-    border: .07em solid lightgrey;
-    transform: scale(0);
-    color: white;
-    font-weight: bold;
-}
-
-#skills-section > section > div{
-    position: relative;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    padding: 0 0 2em 0;
-    backdrop-filter: blur(.25em);
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, .8));
-}
-
-#frontend-skills{
-    background: url("../images/frontend.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#backend-skills{
-    background: url("../images/backend.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#development-tools{
-    background: url("../images/tools.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.pop{
-    transition: transform;
-    transition-duration: .8s;
-    transition-timing-function: ease-in;
-    transform: scale(1) !important;
-}
-
-.skill-header{
-    height: 12em;
+.skill{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 33.33em;
     margin: 0;
     padding: 0;
 }
 
-.fas-skill{
-    font-size: 2.25em;
-    margin: 1em 0 .5em 0;
+.skill-title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75em !important;
+    height: 100%;
+    margin: 0 auto;
     padding: 0;
 }
 
-.skill-header h2{
-    margin: .5em 0 0 0;
+.skill div{
+    width: 50em;
+    margin: 0 auto;
+}
+
+.skill h2{
+    font-size: 2.75em;
+    margin: 0;
     padding: 0;
+    text-shadow: -.07em .04em .05em rgb(6, 6, 30);
 }
 
-#skills-section > section ul{
-    margin: 0 0 3.5em 0;
-    padding: 0;
+.skill p{
+    width: 33.33em;
+    margin: 1em auto 0 auto;
 }
 
-#skills-section > section ul li {
-    margin: 1em 0;
-    color: white;
-    font-weight: bold;
+#html-skill{
+    background-color: #E8D8C3;
+    color: #2B2B2B;
 }
 
-@media screen and (max-width: 1300px){
+#css-skill{
+    background-color: #DBC6A5;
+    color: #2D2D2D;
+}
 
-    #skills-section{
-        flex-direction: column;
-    }
+#node-skill{
+    background-color: #B6A480;
+    color: #202020;
+}
 
-    #skills-section > section{
-        width: 80%;
-        max-width: 95%;
-        min-height: auto;
-        margin: 2em auto !important;
-    }
+#test-skill{
+    background-color: #C9A181;
+    color: #1C1C1C;
+}
 
-    #skills-section h2{
-        margin-bottom: 2em;
-    }
-    
-    #skills-section > section:nth-child(2n){
-        margin: 2em auto 2em auto;
-    }
+#api-skill{
+    background-color: #D8B4A0;
+    color: #2E2E2E;
+}
+
+#sql-skill{
+    background-color: #D7A199;
+    color: #212121;
+}
+
+#git-skill{
+    background-color: #B78E91;
+    color: #FAFAFA;
+}
+
+#heroku-skill{
+    background-color: #C97B63;
+    color: #FFFFFF;
 }

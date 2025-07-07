@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: 'Cinzel', serif;
+    font-family: '-apple-system', 'BlinkMacSystemFont', "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 html{
@@ -59,14 +59,14 @@ footer{
 /* header animation togglers */
 .show-header{
     animation-name: show;
-    animation-duration: .7s;
+    animation-duration: .2s;
     animation-timing-function: ease-in;
-    transform: translateY(0)
+    transform: translateY(0);
 }
 
 .hide-header{
     animation-name: hide;
-    animation-duration: 1s !important;
+    animation-duration: .6s !important;
     animation-timing-function: ease-out;
     transform: translateY(-100%);
 }
