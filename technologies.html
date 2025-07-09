@@ -11,8 +11,8 @@
             gtag('config', 'UA-149441352-1');
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content="Full stack software developer, specializing in the front and back end of web applications."/>
-        <title>Jason Carcamo - Technology stacks</title>
+        <meta name="description" content="I start every project with a strong foundation in semantic HTML, ensuring that content is structured logically for both humans and devices. By following best practices in coding, I help improve search engine visibility, support screen readers, and minimize technical issues, for big and small, web applications."/>
+        <title>Technology stacks</title>
         <link href="./styles/template.css" rel="stylesheet" type="text/css"/>
         <link href="./styles/technologies.css" rel="stylesheet" type="text/css"/>
         <link href="./styles/hamburger.css" rel="stylesheet" type="text/css"/>
@@ -25,6 +25,8 @@
         <script src="./scripts/template.js" async></script>
         <script src="./scripts/skills.js" async></script>
         <script src="./scripts/index.js" async></script>
+        <script src="https://cdn.tailwindcss.com">
+        </script>
     </head>
 
     <body>
@@ -42,83 +44,102 @@
                     <a href="./index.html#home">Home</a>
                     <a href="./technologies.html">Technologies</a>
                     <a href="./projects.html">Projects</a>
-                    <a href="./about.html">About me</a>
+                    <a href="./about.html">About</a>
                 </nav>
             </div>
         </header>
         <main>
             <section id="skills-section">    
 
-                <section id="html-skill" class="skill splash">
+                <section id="html-skill" class="skill splash sticky top-0 h-screen">
                     <div class="skill-title-container">
                         <h2>Semantic HTML – Structured for SEO & Accessibility</h2>
                         <p>I start every project with a strong foundation in semantic HTML, ensuring that content is structured logically for both humans and devices. By following best practices in coding, I help improve search engine visibility, support screen readers, and minimize technical issues, for big and small, web applications.</p>
                     </div>
                     
-                    <div>a picture</div>
+                    <div class="icon-container">
+                        <img class="icon" src="./tech-images/html-icon.svg"/>
+                    </div>
                 </section>
 
-                <section id="css-skill" class="skill">
+                <section id="css-skill" class="skill sticky top-0 h-screen">
                     <div class="skill-title-container">
                         <h2>Responsive, Mobile-First design</h2>
                         <p>I build fully responsive, mobile-friendly interfaces using Flexbox, CSS Grid, and media queries. Whether it’s a complex dashboard or a landing page, my layouts are designed to adapt seamlessly across all devices. I follow scalable modern CSS methodologies to ensure maintainability across teams and consistency in design.</p>
                     </div>
                     
-                    <div></div>
+                    <div class="icon-container">
+                        <img class="icon" src="./tech-images/css.svg"/>
+                    </div>
                 </section>
 
-                <section id="node-skill" class="skill">
+                <section id="node-skill" class="skill sticky top-0 h-screen">
                     <div class="skill-title-container">
                         <h2>Node.js & Express – Building Back End that Scales</h2>
                         <p>On the server side, I develop fast, reliable back-end systems using Node.js and Express.js. My API architecture is clean, modular, and scalable — with well-structured routing, reusable middleware, and secure, environment-aware configurations.</p>
                     </div>
                     
-                    <div></div>
+                    <div class="icon-container">
+                        <img class="icon" src="./tech-images/node-icon.svg"/>
+                    </div>
                 </section>
 
-                <section id="test-skill" class="skill">
+                <section id="test-skill" class="skill sticky top-0 h-screen">
                     <div class="skill-title-container">
                         <h2>Test-Driven Development (TDD)</h2>
                         <p>I prioritize code reliability through test-driven development, writing unit and integration tests using Jest or Mocha. This approach allows me to ship features quickly without sacrificing stability or scalability — a critical standard for enterprise systems.</p>
                     </div>
                     
-                    <div></div>
+                    <div class="icon-container">
+                        <img class="icon" src="./tech-images/test-tube.svg"/>
+                    </div>
                 </section>
 
-                <section id="api-skill" class="skill">
+                <section id="api-skill" class="skill sticky top-0 h-screen">
                     <div class="skill-title-container">
                         <h2>RESTful API Design – Consistent, Versioned, Developer-Friendly</h2>
                         <p>I design APIs with RESTful best practices, ensuring consistent response structures, proper versioning, and thoughtful handling of errors and edge cases. I document endpoints clearly to support easy front-end integration, third-party use, or mobile app consumption.</p>
                     </div>
                     
-                    <div></div>
+                    <div class="icon-container">
+                        <img class="icon" src="./tech-images/development-web-development-svgrepo-com.svg"/>
+                        <img class="icon" src="./tech-images/password-lock.svg"/>
+                    </div>
                 </section>
                 
-                <section id="sql-skill" class="skill">
+                <section id="sql-skill" class="skill sticky top-0 h-screen">
                     <div class="skill-title-container">
                         <h2>MySQL & PostgreSQL – Structured Data for High Performance</h2>
                         <p>With experience in both MySQL and PostgreSQL, I design normalized, relational schemas that scale efficiently and remain easy to query and maintain. I optimize performance through indexing, constraint management, and query tuning.</p>
                     </div>
                     
-                    <div></div>
+                    <div class="icon-container">
+                        <img class="icon" src="./tech-images/mysql-icon.svg"/>
+                        <img class="icon" src="./tech-images/postgresql.svg"/>
+                    </div>
                 </section>
 
-                <section id="git-skill" class="skill">
+                <section id="git-skill" class="skill sticky top-0 h-screen">
                     <div class="skill-title-container">
                         <h2>Git & GitHub – Clean Collaboration & Source Control</h2>
                         <p>I use Git and GitHub to manage codebases with clarity — employing branching strategies, pull requests, and code reviews to maintain quality and speed across teams. I integrate GitHub into CI/CD pipelines for automated testing and deployments.</p>
                     </div>
                     
-                    <div></div>
+                    <div class="icon-container">
+                        <img class="icon" src="./tech-images/teamwork-color.svg"/>
+                        <img class="icon" src="./tech-images/github-icon.svg"/>
+                    </div>
                 </section>
 
-                <section id="heroku-skill" class="skill">
+                <section id="heroku-skill" class="skill sticky top-0 h-screen">
                     <div class="skill-title-container">
                         <h2>Mobile-Friendly Deployment with Vercel & Heroku</h2>
                         <p>I deploy mobile-first applications using platforms like Vercel (for front-end and static hosting) and Heroku (for back-end APIs and staging environments). My deployment strategy ensures fast performance on all devices, with zero-downtime rollouts and environment configuration for development, staging, and production.</p>
                     </div>
                     
-                    <div></div>
+                    <div class="icon-container">
+                        <img class="icon" src="./tech-images/heroku-logo.svg"/>
+                    </div>
                 </section>
 
             </section>

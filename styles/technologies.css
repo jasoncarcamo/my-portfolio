@@ -1,5 +1,6 @@
 #skills-section{
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -8,26 +9,21 @@
 
 .skill{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: 33.33em;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
-
 .skill-title-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 75em !important;
-    height: 100%;
+    width: 70em;
+    height: 50%;
     margin: 0 auto;
     padding: 0;
-}
-
-.skill div{
-    width: 50em;
-    margin: 0 auto;
 }
 
 .skill h2{
@@ -43,41 +39,87 @@
 }
 
 #html-skill{
-    background-color: #E8D8C3;
-    color: #2B2B2B;
+    background-color: #1c1c1c; /* charcoal */
+    color: #f5f5f5; /* off-white for contrast */
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    width: 50em;
+    margin: 0 auto;
+}
+
+.icon{
+    display: block;
+    width: 9em;
+    height: 9em;
+    margin: auto -.25em;
+    padding: 0;
+    filter: drop-shadow( -.1em .1em .02em rgba(8, 6, 23, 0.7));
+    position: relative;
+    bottom: 0;
+    transform: rotate(0deg);
+    transition: all ease-in .2s;
+}
+
+.icon:hover{
+    position: relative;
+    bottom: 1.25em;
 }
 
 #css-skill{
-    background-color: #DBC6A5;
-    color: #2D2D2D;
+    background-color: #2e3a59; /* navy slate */
+    color: #e0e6ed; /* light gray-blue */
 }
 
 #node-skill{
-    background-color: #B6A480;
-    color: #202020;
+    background-color: #2C5F2D;
+    color: #FFFFFF;
 }
 
 #test-skill{
-    background-color: #C9A181;
-    color: #1C1C1C;
+    background-color: #D35400;
+    color: #F8EDEB;
 }
 
 #api-skill{
-    background-color: #D8B4A0;
-    color: #2E2E2E;
+    background-color: #1F3A93;
+    color: #FFFFFF;
 }
 
 #sql-skill{
-    background-color: #D7A199;
-    color: #212121;
+    background-color: #4E342E;
+    color: #D7CCC8;
 }
 
 #git-skill{
-    background-color: #B78E91;
-    color: #FAFAFA;
+    background-color: #5A6978;
+    color: #FFFFFF;
 }
 
 #heroku-skill{
-    background-color: #C97B63;
-    color: #FFFFFF;
+    background-color: #581845;
+    color: #FAF3E0;
 }
+
+@media screen and ( max-width: 1300px) {
+    .skill-title-container{
+        width: 90%;
+    }
+
+    .skill-title-container p{
+        width: 90%;
+    }
+
+    .icon-container{
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    .icon{
+        width: 5em;
+        height: 5em;
+    }
+
+};

@@ -1,4 +1,4 @@
-$(function(){
+/* $(function(){
     
     function fadeInWord(){
         const container = document.getElementById("landing-page-section-container");
@@ -18,4 +18,4 @@ $(function(){
     
     fadeInWord();
     fadeInViewMore();
-});
+});*/

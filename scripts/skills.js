@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
     function popSkills(){
         
         const frontendSkills = document.getElementById("frontend-skills");
@@ -18,4 +18,4 @@ $(function(){
 
     
     popSkills();
-});
+});*/

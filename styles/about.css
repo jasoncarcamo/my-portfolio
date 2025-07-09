@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0;
-    background-color: #f1ece5;
+    background-color: #f4f4f4;
 }
 
 #about-summary-container p{
@@ -21,11 +21,6 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
-}
-
-#about-summary-container h2{
-    font-size: 2.75em;
-    text-shadow: -.07em .04em .05em rgb(6, 6, 30);
 }
 
 @media screen and (max-width: 1300px){

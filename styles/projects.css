@@ -1,3 +1,7 @@
+main{
+    background-color: #f4f4f4;
+}
+
 main > section{
     margin: 0;
     padding: 5em 0 0 0;
@@ -17,8 +21,15 @@ main > section{
     margin: 5.5em auto;
     padding: 0;
     background-color: white !important;
-    transform: translateX(-150%);
-    border: .075em solid lightgrey;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 .8em 1em rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover{
+    transform: translateY(-1em);
+    box-shadow: 0 .8em 1.6em rgba(0, 0, 0, 0.2);
 }
 
 .project > section{
