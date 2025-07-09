@@ -29,16 +29,6 @@ $(function(){
             'Github repo': "https://github.com/jasoncarcamo/burgerrest",
             started: "Mar 5, 2019",
             ended: "Mar 5, 2019"
-        },
-        {
-            img: "./images/website3.png",
-            Name: "Rhyming App",
-            Description: "Helps you find rhyming words in english or spanish.",
-            'Built with': "Html5, Css3, React, Rhyme brain Api",
-            'View Live': "https://jasoncarcamo.github.io/reactrhyme/",
-            'Github repo': "https://github.com/jasoncarcamo/reactrhyme-code",
-            started: "Mar 10, 2019",
-            ended: "Mar 10, 2019"
         }
     ];
     
@@ -72,16 +62,6 @@ $(function(){
             'Github repo': "https://github.com/jasoncarcamo/julis-cleaning-company-client",
             started: "Aug 10, 2019",
             ended: "Aug 20, 2019"
-        },
-        {
-            img: "./images/shoe-comp.png",
-            Name: "Shoe comp",
-            Description: "Users select shoes with different color combinations and add the shoe to their cart. The shoe stays in the cart incase a user did not confirm or cancel the order.",
-            'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API",
-            'View Live': "https://shoe-comp-app.jasoncarcamo30.now.sh/",
-            'Github repo': "https://github.com/jasoncarcamo/shoe-comp",
-            started: "Apr 20, 2019",
-            ended: "Apr 25, 2019"
         }
     ];
     
