@@ -52,8 +52,8 @@
 
 .icon{
     display: block;
-    width: 9em;
-    height: 9em;
+    width: 7em;
+    height: 7em;
     margin: auto -.25em;
     padding: 0;
     filter: drop-shadow( -.1em .1em .02em rgba(8, 6, 23, 0.7));
@@ -104,6 +104,11 @@
 }
 
 @media screen and ( max-width: 1300px) {
+
+    .h-screen{
+        min-height: 28em;
+    }
+
     .skill-title-container{
         width: 90%;
     }
@@ -113,13 +118,15 @@
     }
 
     .icon-container{
+        display: none;
         width: 100%;
         margin: 5% auto;
+        padding: 3em 5em;
     }
 
     .icon{
-        width: 5em;
-        height: 5em;
+        width: 4.5em;
+        height: 4.5em;
     }
 
 };

@@ -29,16 +29,6 @@ $(function(){
             'Github repo': "https://github.com/jasoncarcamo/burgerrest",
             started: "Mar 5, 2019",
             ended: "Mar 5, 2019"
-        },
-        {
-            img: "./images/website3.png",
-            Name: "Rhyming App",
-            Description: "Helps you find rhyming words in english or spanish.",
-            'Built with': "Html5, Css3, React, Rhyme brain Api",
-            'View Live': "https://jasoncarcamo.github.io/reactrhyme/",
-            'Github repo': "https://github.com/jasoncarcamo/reactrhyme-code",
-            started: "Mar 10, 2019",
-            ended: "Mar 10, 2019"
         }
     ];
     
@@ -72,16 +62,6 @@ $(function(){
             'Github repo': "https://github.com/jasoncarcamo/julis-cleaning-company-client",
             started: "Aug 10, 2019",
             ended: "Aug 20, 2019"
-        },
-        {
-            img: "./images/shoe-comp.png",
-            Name: "Shoe comp",
-            Description: "Users select shoes with different color combinations and add the shoe to their cart. The shoe stays in the cart incase a user did not confirm or cancel the order.",
-            'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API",
-            'View Live': "https://shoe-comp-app.jasoncarcamo30.now.sh/",
-            'Github repo': "https://github.com/jasoncarcamo/shoe-comp",
-            started: "Apr 20, 2019",
-            ended: "Apr 25, 2019"
         }
     ];
     
@@ -128,55 +108,46 @@ $(function(){
     
         for(let i = 0; i < frontendProjects.length; i++){
             frontendProjects[i]["Built with"] = frontendProjects[i]["Built with"].split(",").map((skill, i) => `<li>${skill}</li>`).join("");
-            console.log(frontendProjects[i]["Built with"])
-            let newProject = `<section class="project"> 
+                let newProject = `<section class="project"> 
     
-                <img class="project-img" src="${frontendProjects[i].img}" alt="${frontendProjects[i].Name} landing page."/>
-                
-                <section>
+                    <img class="project-img" src="${frontendProjects[i].img}" alt="${frontendProjects[i].Name} landing page."/>
                     
-                    <div class="close-project">
-                        <div></div>
-                        <div></div>
-                    </div>
-    
-                    <button class="display-project-btn">View</button>
-
-                    <div class="author-container">
-                        <div class="author-icon"></div>
-
-                        <div class="author-info">
-                            <p>Jason C.</p>
-                            <p>${frontendProjects[i].started ? (frontendProjects[i].started + " <span class='date-separator'></span> " + frontendProjects[i].ended) : ""}</p>
+                    <section>
+                        
+                        <div class="close-project">
+                            <div></div>
+                            <div></div>
                         </div>
+        
+                        <button class="display-project-btn">View</button>
 
-                        <div class="author-options">
-                            <div class="author-options-dot"> </div>
-                            <div class="author-options-dot"> </div>
-                            <div class="author-options-dot"> </div>
+                        <div class="author-container">
+                            <div class="author-icon"></div>
 
-                            <div class="project-options">
-                                <a class="live-link" href='${frontendProjects[i]["View Live"]}' target='_blank' aria-label="${frontendProjects[i].Name} View" rel="noopener">View</a>
-                                <a href='${frontendProjects[i]["Github repo"]}' target='_blank' aria-label="${frontendProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
+                            <div class="author-info">
+                                <p>Jason C.</p>
+                                <p>${frontendProjects[i].started ? (frontendProjects[i].started + " <span class='date-separator'></span> " + frontendProjects[i].ended) : ""}</p>
                             </div>
+
+                            <div class="author-options">
+                                <div class="author-options-dot"> </div>
+                                <div class="author-options-dot"> </div>
+                                <div class="author-options-dot"> </div>
+
+                                <div class="project-options">
+                                    <a class="live-link" href='${frontendProjects[i]["View Live"]}' target='_blank' aria-label="${frontendProjects[i].Name} View" rel="noopener">View</a>
+                                    <a href='${frontendProjects[i]["Github repo"]}' target='_blank' aria-label="${frontendProjects[i].Name} github repository" rel="noopener">GitHub Repo</a>
+                                </div>
+                            </div>
+    
                         </div>
-   
-                    </div>
-    
-                    <div class="project-info">
-                        <h3>${frontendProjects[i].Name}</h3>
-    
-                        <p>${frontendProjects[i].Description}</p
-    
-                        <p><strong>Tech Stack:</strong></p>
-                        <ul>
-                            ${frontendProjects[i]["Built with"]}
-                        </ul>
-                    </div>
-    
-                </section>
-            </section>`;
-            
+        
+                        <div class="project-info">
+                            <h3>${frontendProjects[i].Name}</h3>
+        
+                            <p>${frontendProjects[i].Description}</p
+                    </section>
+                </section>`;
             $("#frontend-projects").append(newProject);
         };
     };
@@ -219,13 +190,7 @@ $(function(){
                     <div class="project-info">
                         <h3>${backendProjects[i].Name}</h3>
     
-                        <p>${backendProjects[i].Description}</p
-    
-                        <p><strong>Tech Stack</strong></p>
-                        <ul
-                            ${backendProjects[i]["Built with"]}
-                        </ul>
-                      
+                        <p>${backendProjects[i].Description}</p>
                     </div>
     
                 </section>
@@ -275,11 +240,6 @@ $(function(){
             <div class="project-info">
                 <h3>${mobileAppProjects[i].Name}</h3>
                 <p>${mobileAppProjects[i].Description}</p>
-
-                <p><strong>Tech Stack</strong></p>
-                <ul
-                    ${mobileAppProjects[i]["Built with"]}
-                </ul>
             </div> 
             </section>
         </section>`;
