@@ -37,8 +37,13 @@ $(function(){
             'Built with': "Html, Css",
             'View Live': "https://jasoncarcamo.github.io/burgerrest/",
             'Github repo': "https://github.com/jasoncarcamo/burgerrest",
+<<<<<<< HEAD
             started: "Mar 2019",
             ended: "Mar 2019"
+=======
+            started: "Mar 5, 2019",
+            ended: "Mar 5, 2019"
+>>>>>>> 9780c7bbb33ed61f92db909f368ad0d5d71f5eb0
         }
     ];
     
@@ -80,8 +85,13 @@ $(function(){
             'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API, Nodemailer.js",
             'View Live': "https://juliscleaningcompany.com/",
             'Github repo': "https://github.com/jasoncarcamo/julis-cleaning-company-client",
+<<<<<<< HEAD
             started: "Aug 2019",
             ended: "Aug 2019"
+=======
+            started: "Aug 10, 2019",
+            ended: "Aug 20, 2019"
+>>>>>>> 9780c7bbb33ed61f92db909f368ad0d5d71f5eb0
         }
     ];
     
