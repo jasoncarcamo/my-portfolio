@@ -1,38 +1,58 @@
 $(function(){
     const frontendProjects = [
         {
+            img: "./images/sweetbliss.png",
+            Name: "Sweet Bliss",
+            Description: "A delightful ice cream shop landing page featuring rich visuals, smooth navigation, and a tempting UI — designed to satisfy every sweet tooth.",
+            'Built with': "Html5, Css3",
+            'View Live': "https://jasoncarcamo.github.io/icecream-shop",
+            'Github repo': "https://github.com/jasoncarcamo/icecream-shop",
+            started: "Feb 2019",
+            ended: "Feb 2019"
+        },
+        {
             img: "./images/website1.png",
-            Name: "Fake college",
-            Description: "Landing page of a fake college campus",
+            Name: "BrightPath Academy",
+            Description: "A clean, modern landing page for a fictional school — built to showcase programs, values, and admissions info with an inviting, professional design",
             'Built with': "Html5, Css3",
             'View Live': "https://jasoncarcamo.github.io/schoollayout",
             'Github repo': "https://github.com/jasoncarcamo/schoollayout",
-            started: "Feb 20, 2019",
-            ended: "Feb 20, 2019"
+            started: "Feb 2019",
+            ended: "Feb 2019"
         },
         {
             img: "./images/website2.png",
-            Name: "Yelp revamp",
-            Description: "Used React.js and Yelp's API to retrieve a list of restaurants according to user's input.",
+            Name: "Yelp redesign",
+            Description: "A modern revamp of Yelp’s landing page — focused on cleaner UI, improved usability, and a more engaging experience for discovering local businesses.",
             'Built with': "Html5, Css3, React.js, Yelp Api",
             'View Live': "https://jasoncarcamo.github.io/yelp-api/",
             'Github repo': "https://github.com/jasoncarcamo/yelp-api-code",
-            started: "Feb 25, 2019",
-            ended: "Feb 25, 2019"
+            started: "Feb 2019",
+            ended: "Feb 2019"
         },
         {
             img: "./images/website4.png",
-            Name: "Burger restaurant",
-            Description: "Used vanilla Html and Css to create a landing for for a fake burger restaurant.",
+            Name: "The Burger Joint",
+            Description: "A juicy, bold landing page for a burger joint — showcasing mouth-watering menu items with a fresh, fun, and easy-to-navigate design.",
             'Built with': "Html, Css",
             'View Live': "https://jasoncarcamo.github.io/burgerrest/",
             'Github repo': "https://github.com/jasoncarcamo/burgerrest",
-            started: "Mar 5, 2019",
-            ended: "Mar 5, 2019"
+            started: "Mar 2019",
+            ended: "Mar 2019"
         }
     ];
     
     const backendProjects = [
+        {
+            img: "./images/pizzashop.png",
+            Name: "The Pizza Shop",
+            Description: "Wood-fired, handcrafted pizzas made with the freshest ingredients. Classic flavors, bold twists, and every slice made with love.",
+            'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API",
+            'View Live': "https://pizza-shop-phi.vercel.app/",
+            'Github repo': "https://github.com/jasoncarcamo/pizza-shop-client",
+            started: "Feb 2025",
+            ended: "March 2025"
+        },
         {
             img: "./images/serenta.png",
             Name: "Serenta",
@@ -40,8 +60,8 @@ $(function(){
             'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API",
             'View Live': "http://serenta.jasoncarcamo30.now.sh/",
             'Github repo': "https://github.com/jasoncarcamo/serenta-client",
-            started: "Sep 10, 2019",
-            ended: "Sep 17, 2019"
+            started: "Sep 2019",
+            ended: "Sep 2019"
         },
         {
             img: "./images/website5.png",
@@ -50,8 +70,8 @@ $(function(){
             'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API",
             'View Live': "https://password-manager.jasoncarcamo30.now.sh/",
             'Github repo': "https://github.com/jasoncarcamo/password-manager-client",
-            started: "Apr 2, 2019",
-            ended: "Apr 5, 2019"
+            started: "Apr 2019",
+            ended: "Apr 2019"
         },
         {
             img: "./images/julis.png",
@@ -60,8 +80,8 @@ $(function(){
             'Built with': "Html5, Css3, React, Express, PostgreSQL, RESTful API, Nodemailer.js",
             'View Live': "https://juliscleaningcompany.com/",
             'Github repo': "https://github.com/jasoncarcamo/julis-cleaning-company-client",
-            started: "Aug 10, 2019",
-            ended: "Aug 20, 2019"
+            started: "Aug 2019",
+            ended: "Aug 2019"
         }
     ];
     
@@ -75,8 +95,8 @@ $(function(){
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/password-manager-app",
             'Github repo': "https://github.com/jasoncarcamo/password-manager-app",
-            started: "Oct 15, 2019",
-            ended: "Oct 19, 2019"
+            started: "Oct 2019",
+            ended: "Oct 2019"
         },
         {
             img: "./images/julismobileapp.png",
@@ -87,8 +107,8 @@ $(function(){
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/julisapp",
             'Github repo': "https://github.com/jasoncarcamo/julisapp",
-            started: "Feb 7, 2020",
-            ended: "Feb 10, 2020"
+            started: "Feb 2020",
+            ended: "Feb 2020"
         },
         {
             img: "./images/francescosmobileapp.png",
@@ -99,8 +119,8 @@ $(function(){
             'Download IOS version': "",
             'View online': "https://snack.expo.io/@git/github.com/jasoncarcamo/FrancescosPizzeriaClient",
             'Github repo': "https://github.com/jasoncarcamo/FrancescosMobileApp",
-            started: "Jan 3, 2020",
-            ended: "Jan 14, 2020"
+            started: "Jan 2020",
+            ended: "Jan 2020"
         }
     ];
     
