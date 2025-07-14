@@ -18,8 +18,4 @@ $(function(){
     
     fadeInWord();
     fadeInViewMore();
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 9780c7bbb33ed61f92db909f368ad0d5d71f5eb0
